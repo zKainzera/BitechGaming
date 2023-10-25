@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  /* O asterisco utilizado serve para remover a formatação de CSS Original do Site, assim podedno modificar na Raiz do Site  */
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Distribui os cards igualmente na horizontal */
+}
+
+.card {
+  width: calc(25% - 20px);
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.image {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  /* Centraliza a imagem horizontalmente */
+}
+
+
+.image img {
+  max-width: 48%;
+  height: auto;
+  /* Mantém a proporção original da imagem */
+}
+
+.legenda {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 2px;
+  text-align: left;
+  font-family: Kodchasan;
+}
+
+.preco {
+  color: #8C52FF;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.tachado {
+  text-decoration: line-through;
+  font-size: 16px;
+  text-align: left;
+  color: #666666;
+}
+
+.pix {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 400;
+  color: #666;
+}
+
+.sac_img {
+  width: 24px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.sacola {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%), #D9D9D9;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comprar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  /* Alinhe verticalmente os elementos dentro do contêiner */
+
+}
+
+.comprar {
+  width: 200px;
+  height: 35px;
+  background: linear-gradient(0deg, #8C52FF 0%, #8C52FF 100%);
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  /* Define o tipo de display do conteúdo */
+  flex-wrap: wrap;
+  /* Define como o conteúdo vai ser distribuído */
+  justify-content: space-between;
+  /* Define como o conteúdo vai ser alinhado */
+
+
+}

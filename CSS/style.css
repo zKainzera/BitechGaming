@@ -1,0 +1,207 @@
+* {
+  /* O asterisco utilizado serve para remover a formatação de CSS Original do Site, assim podedno modificar na Raiz do Site  */
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.form_body {
+  font-family: Kodchasan;
+  background-color: #272626;
+}
+
+.container {
+  background-color: #ebebeb;
+  width: 85%;
+  /* Define a largura do conteúdo central */
+  margin: 0 auto;
+  /* Centraliza o conteúdo na página */
+  padding: 0px;
+  /* Adiciona algum espaçamento interno ao conteúdo */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  /* Adiciona uma sombra ao conteúdo */
+  display: flex;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #dcdcdc;
+  /* Cor de fundo da navbar */
+  color: #000;
+  /* Cor do texto na navbar */
+}
+
+/* Estilos para o logotipo */
+.logo img {
+  height: 48px;
+  /* Ajuste a altura conforme necessário */
+}
+
+/* Estilos para os ícones */
+.icons img {
+  width: 20px;
+  /* Ajuste a largura conforme necessário */
+  height: 20px;
+  /* Ajuste a altura conforme necessário */
+  margin-left: 10px;
+  /* Espaçamento entre os ícones */
+  cursor: pointer;
+}
+
+/* Estilos para a barra final */
+.barra-navbar {
+  height: 35px;
+  /* Altura da barra final */
+  background-color: #6400ff;
+  /* Cor da barra final */
+  box-shadow: 0 0 1 black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  font-size: 36px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 100px;
+
+}
+
+
+
+/** Cronômetro **/
+
+.cronometro {
+  background-color: #6400ff;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 100px;
+  font-family: Kodchasan;
+  color: #ffff;
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+#timer {
+  font-size: 30px;
+  text-align: right;
+  padding-left: 15px;
+}
+
+.img-direita {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  /* Adicione margem para separar a imagem do cronômetro do texto */
+}
+
+.acabar {
+  text-align: left;
+  display: flex;
+  font-size: 25px;
+}
+
+
+
+
+
+
+.offcanvas {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.offcanvas-content {
+  margin-right: 25px;
+  padding: 15px;
+  text-align: right;
+  /* Alinhar à direita */
+}
+
+.offcanvas a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.offcanvas a:hover,
+.offcanvas a:focus {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.toggle-button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Submenu styles */
+.submenu {
+  display: none;
+  text-align: right;
+  /* Alinhar à direita */
+}
+
+.submenu .toggle-button {
+  display: block;
+  text-align: right;
+  /* Alinhar à direita */
+}
+
+.submenu a {
+  font-size: 20px;
+  color: #ccc;
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.submenu .sub-submenu {
+  display: none;
+  padding-left: 20px;
+}

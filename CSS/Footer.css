@@ -1,0 +1,39 @@
+footer {
+    background-color: #292929;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.info, .horario, .redes-sociais, .informacoes-direita, .outras-informacoes {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #8C52FF;
+}
+
+p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

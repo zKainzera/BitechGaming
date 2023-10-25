@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="CSS/Produtos.css">
+  <link rel="stylesheet" type="text/css" href="CSS/carrossel.css">
+  <link rel="stylesheet" type="text/css" href="CSS/Footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-7g8RfzXuEK3fRABmlUoKs/auF4CcJ14mt5Ag6A5FIm51Jb1BO5B6W/hFZKKF5g5i5">
+  <title>Bitech Gaming | Melhor Loja de Hardwares</title>
+  <link rel="icon" href="img/Logo Base.png" type="image/x-icon">
+
+</head>
+
+<body class="form_body">
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+    <div class="icons">
+      <img src="img/icone1.png" alt="Pesquisa" />
+      <img src="img/icone2.png" alt="Carrinho">
+      <img src="img/icone3.png" alt="Favoritos">
+      <a href="cadastro.html"> 
+        <img src="img/icone4.png" alt="Perfil"> 
+      </a>
+      <img src="img/icone5.png" alt="Menu" onclick="openOffcanvas()">
+    </div>
+  </nav>
+
+  <div id="myOffcanvas" class="offcanvas">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeOffcanvas()">&times;</a>
+    <div class="offcanvas-content">
+      <h2>Menu Offcanvas</h2>
+      <a href="#" class="toggle-button" onclick="toggleSubmenu()">&#9776;</a>
+      <div class="submenu" id="submenu">
+        <a href="#" class="toggle-button" onclick="toggleSubSubmenu()">&#9776;</a>
+        <div class="sub-submenu" id="sub-submenu">
+          <a href="#">Sub-submenu 1</a>
+          <a href="#">Sub-submenu 2</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openOffcanvas() {
+      document.getElementById("myOffcanvas").style.width = "250px";
+    }
+
+    function closeOffcanvas() {
+      document.getElementById("myOffcanvas").style.width = "0";
+    }
+
+    function toggleSubmenu() {
+      var submenu = document.getElementById("submenu");
+      if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+      } else {
+        submenu.style.display = "block";
+      }
+    }
+
+    function toggleSubSubmenu() {
+      var subSubmenu = document.getElementById("sub-submenu");
+      if (subSubmenu.style.display === "block") {
+        subSubmenu.style.display = "none";
+      } else {
+        subSubmenu.style.display = "block";
+      }
+    }
+  </script>
+
+  <div class="barra-navbar">
+ <a href="index.html">HOME  |</a>
+    <a href="produtos.html">PRODUTOS  | </a>
+    <a href="promocoes.html">PROMOÇÕES </a> 
+  </div>
+
+  <!-- BANNER CARROSSEL!-->
+  <div cla ss="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="img/Carrossel/1.png" style="width:100%;">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/Carrossel/2.png" style="width:100%;">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/Carrossel/3.png" style="width:100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/Carrossel/4.png" style="width:100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/Carrossel/5.png" style="width:100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/Carrossel/6.png" style="width:100%;">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Marcadores -->
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <!--  Para colocar mais de um item copia esse span e aumenta o numero do () para 6 e assim pora diante -->
+  </div>
+  </br></br>
+  <!-- BANNER CARROSSEL!-->
+
+
+
+
+  <!--  INICIO DOS CARDS  !-->
+
+  <section class="container">
+    <div class="cards">
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/radeon6750.png">
+        </div>
+        <div class="legenda">
+          MSI Placa gráfica Gaming Radeon RX 6750 XT 192 bits 12GB GDDR6...
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/ps5.png" alt="Console PlayStation® 5">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 4.799,90
+        </div>
+        <div class="preco">
+          R$ 4.499,00
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/memoria-ram.png" alt="Memória RAM Kingston HyperX Fury">
+        </div>
+        <div class="legenda">
+          Memória RAM Kingston HyperX Fury 8GB DDR4 2400MHz
+        </div>
+        <br><br><br>
+        <div class="tachado">
+          R$ 150,00
+        </div>
+        <div class="preco">
+          R$ 143,89
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/notebook-dell.png" alt="Notebook Dell Alienware">
+        </div>
+        <div class="legenda">
+          Notebook Dell Alienware m16 AW16-i1300-M20P 16" QHD 13ª Geração Intel Core i9 32GB 1TB SSD RTX 4070 Windows 11
+        </div>
+        <div class="tachado">
+          R$ 14.953,47
+        </div>
+        <div class="preco">
+          R$ 12.974,30
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/teclado-hyperx.png" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          HyperX Teclado Gamer HyperX Alloy Core RGB - ABNT2 - Switch Brown
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 179,90
+        </div>
+        <div class="preco">
+          R$ 168,90
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/ps5.png" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+      <!-- Cronômetro !-->
+      <div class="cronometro">
+        <div class="left-content">
+          <span class="texto-esquerda">Promoções em Chamas!!!🔥🔥🔥</span>
+        </div>
+        <div class="right-content">
+          <img class="img-direita" src="img/timer_FILL0_wght400_GRAD0_opsz24.png" alt="Cronômetro">
+          <div id="timer">00:00:00
+            <div class="acabar"> Para<br> Acabar </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="container"><br><br><br><br>
+    <div class="cards">
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/radeon 6750.png">
+        </div>
+        <div class="legenda">
+          MSI Placa gráfica Gaming Radeon RX 6750 XT 192 bits 12GB GDDR6...
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Console PlayStation® 5">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br>
+        <div class="tachado">
+          R$ 4.799,90
+        </div>
+        <div class="preco">
+          R$ 4.499,00
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/hyperx_8GB_memoria_ram_DDR4_1866MHZ_fury.jpg" alt="Memória RAM Kingston HyperX Fury">
+        </div>
+        <div class="legenda">
+          Memória RAM Kingston HyperX Fury 8GB DDR4 2400MHz
+        </div>
+        <br><br><br>
+        <div class="tachado">
+          R$ 150,00
+        </div>
+        <div class="preco">
+          R$ 143,89
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img
+            src="img/produtos/Notebook_Dell_Alienware_m16_AW16-i1300-M20P_16_QHD_13_Geração_Intel_Core_i9_32GB_1TB_SSD_RTX_4070_Windows_11.jpg"
+            alt="Notebook Dell Alienware">
+        </div>
+        <div class="legenda">
+          Notebook Dell Alienware m16 AW16-i1300-M20P 16" QHD 13ª Geração Intel Core i9 32GB 1TB SSD RTX 4070 Windows 11
+        </div>
+
+        <div class="tachado">
+          R$ 14.953,47
+        </div>
+        <div class="preco">
+          R$ 12.974,30
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/teclado-hyperx.png" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          HyperX Teclado Gamer HyperX Alloy Core RGB - ABNT2 - Switch Brown
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 179,90
+        </div>
+        <div class="preco">
+          R$ 168,90
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="img/produtos/console_ps5_com_leitor_bluray_um_controle.jpg" alt="Placa de vídeo">
+        </div>
+        <div class="legenda">
+          Console PlayStation® 5 - Digital Edition + 2 Controle DualSense - Branco
+        </div>
+        <br><br>
+        <div class="tachado">
+          R$ 5.800,00
+        </div>
+        <div class="preco">
+          R$ 4.289,99
+        </div>
+        <div class="pix">
+          À vista no pix
+        </div>
+        <div class="comprar-container">
+          <div class="sacola">
+            <img class="sac_img" src="img/Vector.png">
+          </div>
+          <div class="comprar">
+            Comprar!
+          </div>
+        </div>
+      </div>
+  </section>
+
+  </br></br>
+
+
+  <footer>
+    <div class="rodape-container">
+      <div class="info">
+        <h3>Bitech Gaming</h3>
+        <a href="https://www.google.com.br/maps/dir/-23.4314471,-46.5266229/EE+Conselheiro+Crispiniano+-+R.+Arminda+de+Lima,+57+-+Vila+Progresso,+Guarulhos+-+SP,+07095-010,+Brasil/@-23.4481566,-46.5505663,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94cef5421ba91d6f:0xf1fc0000bf490827!2m2!1d-46.5348867!2d-23.4617458?hl=pt-BR&entry=ttu"
+          target="_blank">
+          Endereço: R. Arminda de Lima, 57 - Vila Progresso, Guarulhos - SP, 07095-010
+        </a>
+        <p>Telefone: (11) 94002-8922</p>
+        <p><a href="mailto:artmartins28@gmail.com" target="_blank">Email: info@bitechgaming.com</a></p>
+      </div>
+      <div class="horario">
+        <h3>Horário de Funcionamento</h3>
+        <p>Segunda a Sexta: 9:00 - 18:00</p>
+        <p>Sábado: 10:00 - 15:00</p>
+        <p>Domingo: Fechado</p>
+        <p>Feriados: Fechado</p>
+      </div>
+      <div class="redes-sociais">
+        <h3>Redes Sociais</h3>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="img/facebook.png" alt="Facebook" width="20" height="auto">
+          Facebook
+        </a>
+        <a href="https://x.com/" target="_blank">
+          <img src="img/logo-white.png" alt="Twitter" width="20" height="auto">
+          X
+        </a>
+        <a href="https://instagram.com/" target="_blank">
+          <img src="img/instagram.png" alt="Instagram" width="20" height="auto">
+          Instagram
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5511940028922&text&type=phone_number&app_absent=0"
+          target="_blank">
+          <img src="img/whatsapp.png" alt="Whatsapp" width="20" height="auto">
+          Whatsapp
+        </a>
+      </div>
+      <div class="informacoes-direita">
+        <h3>Outras Informações</h3>
+        <p><a href="privacidade.html" target="_blank">Política de Privacidade</a></p>
+        <p><a href="termos.html" target="_blank">Termos e Condições</a></p>
+      </div>
+      <div class="outras-informacoes">
+        <h3>Links Úteis</h3>
+        <p>FAQ</p>
+        <p>Atendimento ao Cliente</p>
+        <p>Trabalhe com a Gente</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="JavaScript/script.js"> </script>
+<script src="JavaScript/carrosseljava.js"></script>
+<script type="text/javascript">
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  var autoSlideInterval; // Variável para armazenar o intervalo automático
+
+  // Função para avançar os slides automaticamente
+  function autoSlide() {
+    plusSlides(1);
+  }
+
+  // Iniciar o intervalo automático quando a página carregar
+  autoSlideInterval = setInterval(autoSlide, 6750); // 2750 milissegundos = 2,750 segundos
+
+  // Função para avançar ou retroceder os slides
+  function plusSlides(n) {
+    clearInterval(autoSlideInterval); // Limpar o intervalo automático atual
+    showSlides(slideIndex += n);
+    autoSlideInterval = setInterval(autoSlide, 6750); // Iniciar um novo intervalo automático
+  }
+
+  // Função para selecionar um slide específico
+  function currentSlide(n) {
+    clearInterval(autoSlideInterval); // Limpar o intervalo automático atual
+    showSlides(slideIndex = n);
+    autoSlideInterval = setInterval(autoSlide, 6750); // Iniciar um novo intervalo automático
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+
+</html>

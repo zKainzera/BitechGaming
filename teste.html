@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Item da Loja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .item {
+            display: flex;
+            align-items: center;
+        }
+        .item img {
+            max-width: 200px;
+            max-height: 200px;
+            margin-right: 20px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .item img.small {
+            max-width: 60px;
+            max-height: 60px;
+            margin-right: 10px;
+        }
+        .item-info {
+            flex: 1;
+        }
+        .item-info h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .item-info p {
+            font-size: 16px;
+        }
+        .item-price {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .pay-button {
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="item_image1.jpg" alt="Item da Loja" id="main-image">
+            <div class="item-info">
+                <h2>Nome do Item</h2>
+                <p>Descrição do item. Informações adicionais podem ser adicionadas aqui.</p>
+            </div>
+        </div>
+        <div class="item-price">
+            Preço: R$ 99.99
+        </div>
+        <button class="pay-button" onclick="redirectToPayment()">Pagar Agora</button>
+        <div class="small-images">
+            <img class="small" src="item_image1.jpg" alt="Thumbnail 1" onclick="changeImage('item_image1.jpg')">
+            <img class="small" src="item_image2.jpg" alt="Thumbnail 2" onclick="changeImage('item_image2.jpg')">
+            <img class="small" src="item_image3.jpg" alt="Thumbnail 3" onclick="changeImage('item_image3.jpg')">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Função para alterar a imagem principal e ativar o zoom
+        function changeImage(imageSrc) {
+            $("#main-image").attr("src", imageSrc);
+        }
+
+        // Função de zoom na imagem principal
+        $("#main-image").hover(function() {
+            $(this).css("transform", "scale(1.2)");
+        }, function() {
+            $(this).css("transform", "scale(1)");
+        });
+
+        function redirectToPayment() {
+            // Aqui você pode adicionar a lógica para redirecionar o usuário para a página de pagamento.
+            // Por exemplo, você pode redirecioná-lo para um formulário de pagamento ou um carrinho de compras.
+            // Substitua a URL abaixo pelo link real da página de pagamento.
+            window.location.href = 'pagina_de_pagamento.html';
+        }
+    </script>
+</body>
+</html>

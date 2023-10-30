@@ -3,106 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Item da Loja</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .item {
-            display: flex;
-            align-items: center;
-        }
-        .item img {
-            max-width: 200px;
-            max-height: 200px;
-            margin-right: 20px;
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-        .item img.small {
-            max-width: 60px;
-            max-height: 60px;
-            margin-right: 10px;
-        }
-        .item-info {
-            flex: 1;
-        }
-        .item-info h2 {
-            font-size: 24px;
-            margin: 0;
-        }
-        .item-info p {
-            font-size: 16px;
-        }
-        .item-price {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        .pay-button {
-            display: block;
-            background-color: #007bff;
-            color: #fff;
-            font-size: 18px;
-            padding: 10px 20px;
-            text-align: center;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Detalhes do Item na Loja</title>
+    <link rel="stylesheet" href="CSS/produtinho.css">
 </head>
 <body>
-    <div class="container">
-        <div class="item">
-            <img src="item_image1.jpg" alt="Item da Loja" id="main-image">
-            <div class="item-info">
-                <h2>Nome do Item</h2>
-                <p>Descrição do item. Informações adicionais podem ser adicionadas aqui.</p>
+    <header>
+        <h1>Nome do Produto</h1>
+        <p>Descrição detalhada do produto com todas as informações que você deseja incluir. Este é um exemplo de um produto incrível que oferecemos em nossa loja.</p>
+    </header>
+    <main>
+        <section class="product-details">
+            <div class="product-image">
+                <img src="img/produtos/memoria-ram.png" alt="Imagem do Produto">
             </div>
-        </div>
-        <div class="item-price">
-            Preço: R$ 99.99
-        </div>
-        <button class="pay-button" onclick="redirectToPayment()">Pagar Agora</button>
-        <div class="small-images">
-            <img class="small" src="item_image1.jpg" alt="Thumbnail 1" onclick="changeImage('item_image1.jpg')">
-            <img class="small" src="item_image2.jpg" alt="Thumbnail 2" onclick="changeImage('item_image2.jpg')">
-            <img class="small" src="item_image3.jpg" alt="Thumbnail 3" onclick="changeImage('item_image3.jpg')">
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        // Função para alterar a imagem principal e ativar o zoom
-        function changeImage(imageSrc) {
-            $("#main-image").attr("src", imageSrc);
-        }
-
-        // Função de zoom na imagem principal
-        $("#main-image").hover(function() {
-            $(this).css("transform", "scale(1.2)");
-        }, function() {
-            $(this).css("transform", "scale(1)");
-        });
-
-        function redirectToPayment() {
-            // Aqui você pode adicionar a lógica para redirecionar o usuário para a página de pagamento.
-            // Por exemplo, você pode redirecioná-lo para um formulário de pagamento ou um carrinho de compras.
-            // Substitua a URL abaixo pelo link real da página de pagamento.
-            window.location.href = 'pagina_de_pagamento.html';
-        }
-    </script>
+            <div class="product-info">
+                <h2>Informações do Produto</h2>
+                <ul>
+                    <li><strong>Marca:</strong> Marca do Produto</li>
+                    <li><strong>Modelo:</strong> Modelo do Produto</li>
+                    <li><strong>Categoria:</strong> Categoria do Produto</li>
+                    <li><strong>Disponibilidade:</strong> Em Estoque</li>
+                    <li><strong>Envio:</strong> Envio Rápido</li>
+                    <li><strong>Garantia:</strong> 1 Ano</li>
+                    <li><strong>Classificação:</strong> ★★★★☆ (4.5)</li>
+                </ul>
+                <p>Descrição detalhada do produto e seus recursos. Este é um ótimo lugar para destacar todos os benefícios do produto.</p>
+                <p><strong>Preço:</strong> R$ 999,00</p>
+                <button class="buy-button">Comprar Agora</button>
+            </div>
+        </section>
+        
+        <section class="product-gallery">
+            <h2>Galeria de Imagens</h2>
+            <div class="image-thumbnails">
+                <img src="img/produtos/ps5.png" alt="Thumbnail 1">
+                <img src="img/produtos/memoria-ram.png" alt="Thumbnail 2">
+                <img src="img/produtos/memoria-ram.png" alt="Thumbnail 3">
+                <img src="img/produtos/memoria-ram.png" alt="Thumbnail 4">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Loja Exemplo - Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

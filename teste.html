@@ -1,48 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Item na Loja</title>
     <link rel="stylesheet" href="CSS/produtinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-7g8RfzXuEK3fRABmlUoKs/auF4CcJ14mt5Ag6A5FIm51Jb1BO5B6W/hFZKKF5g5i5">
+    <link rel="icon" href="img/Logo Base.png" type="image/x-icon">
+    <title>Memoriam RAM</title>
+
 </head>
 <body>
     <header>
         <h1>Nome do Produto</h1>
         <p>Descrição detalhada do produto com todas as informações que você deseja incluir. Este é um exemplo de um produto incrível que oferecemos em nossa loja.</p>
-    </header>
-    <main>
-        <section class="product-details">
-            <div class="product-image">
-                <img src="img/produtos/memoria-ram.png" alt="Imagem do Produto">
+        </header>
+        <main>
+            <div class="product-details">
+                <div class="image-thumbnails">
+                    <h2>Galeria de Imagens</h2>
+                    <img src="img/produtos/memoria-ram.png" alt="Thumbnail 1" onclick="changeImage('img/produtos/memoria-ram.png')">
+                    <img src="img/produtos/memoria-ram.png" alt="Thumbnail 2" onclick="changeImage('img/produtos/memoria-ram.png')">
+                    <img src="img/produtos/memoria-ram.png" alt="Thumbnail 3" onclick="changeImage('img/produtos/memoria-ram.png')">
+                    <img src="img/produtos/memoria-ram.png" alt="Thumbnail 4" onclick="changeImage('img/produtos/memoria-ram.png')">
+                </div>
+                <div class="product-image">
+                    <img src="img/produtos/memoria-ram.png" alt="Imagem do Produto">
+                </div>
+            </section>
+            <p><strong>Preço:</strong> R$ 138,99</p>
+            <button class="buy-button">Comprar Agora</button>
+        </main>
+        <div class="product-info">
+            <!-- Informações do Produto aqui -->
             </div>
-            <div class="product-info">
-                <h2>Informações do Produto</h2>
-                <ul>
-                    <li><strong>Marca:</strong> Marca do Produto</li>
-                    <li><strong>Modelo:</strong> Modelo do Produto</li>
-                    <li><strong>Categoria:</strong> Categoria do Produto</li>
-                    <li><strong>Disponibilidade:</strong> Em Estoque</li>
-                    <li><strong>Envio:</strong> Envio Rápido</li>
-                    <li><strong>Garantia:</strong> 1 Ano</li>
-                    <li><strong>Classificação:</strong> ★★★★☆ (4.5)</li>
-                </ul>
-                <p>Descrição detalhada do produto e seus recursos. Este é um ótimo lugar para destacar todos os benefícios do produto.</p>
-                <p><strong>Preço:</strong> R$ 999,00</p>
-                <button class="buy-button">Comprar Agora</button>
+            <h2>Informações do Produto</h2>
+            <ul>
+                <li><strong>Marca:</strong> HyperX</li>
+                <li><strong>Modelo:</strong> Fury</li>
+                <li><strong>Categoria:</strong> Memória RAM</li>
+                <li><strong>Disponibilidade:</strong> Em Estoque</li>
+                <li><strong>Envio:</strong> Envio Rápido</li>
+                <li><strong>Garantia:</strong> 1 Ano</li>
+                <li><strong>Classificação:</strong> ★★★★☆ (4.5)</li>
+            </ul>
+            <p>Memória Kingston Fury Beast A memória Kingston FURY Beast DDR4 proporciona um poderoso aumento de performance para jogos, edição de vídeo e renderização. Ela faz o overclock automático para a especificação de maior performance do módulo que seja suportada pelo sistema* e está pronta para Intel XMP e AMD Ryzen. Com o seu dissipador de calor de perfil baixo, a memória FURY Beast DDR4 permanece fria e pronta para o seu game. 100% testada na fábrica, é a atualização definitiva para seu computador. Os processadores/chipsets da Intel até a 7ª Geração não eram desenvolvidos para suportar módulos de memória DDR4 fabricados com chips DRAM de densidade 16Gbit. Verifique com o fabricante do sistema ou placa-mãe, caso o seu sistema possua processador Intel de 7ª geração e com o chipset da série 200, para obter uma BIOS atualizada para suportar DRAM de 16Gbit. Componentes mais antigos (6ª geração ou chipsets da série 100) não são compatíveis. *A memória FURY Plug N Play funcionará nos sistemas DDR4 até a velocidade permitida pela BIOS do sistema do fabricante. PnP não pode aumentar a velocidade da memória do sistema além do que é permitido pela BIOS do fabricante. Os produtos FURY Plug N Play DDR4 são compatíveis com as especificações XMP 2.0, desse modo o overclock também pode ser conseguido habilitando o Perfil XMP integrado.</p>
             </div>
-        </section>
-        
-        <section class="product-gallery">
-            <h2>Galeria de Imagens</h2>
-            <div class="image-thumbnails">
-                <img src="img/produtos/ps5.png" alt="Thumbnail 1">
-                <img src="img/produtos/memoria-ram.png" alt="Thumbnail 2">
-                <img src="img/produtos/memoria-ram.png" alt="Thumbnail 3">
-                <img src="img/produtos/memoria-ram.png" alt="Thumbnail 4">
-            </div>
-        </section>
-    </main>
+        </div>
     <footer>
         <p>© 2023 Loja Exemplo - Todos os direitos reservados.</p>
     </footer>

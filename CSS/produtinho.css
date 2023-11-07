@@ -1,11 +1,10 @@
 * {
-    /* O asterisco utilizado serve para remover a formatação de CSS Original do Site, assim podedno modificar na Raiz do Site  */
     box-sizing: border-box;
     list-style: none;
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -25,7 +24,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding:1rem;
+    padding: 1rem;
 }
 
 h1, h2 {
@@ -58,48 +57,64 @@ button.buy-button:hover {
     background-color: #0056b3;
 }
 
-/* Estilos da galeria de imagens */
-.product-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .product-details {
     display: flex;
-    flex-direction: row; /* Coloca a galeria à esquerda e o produto à direita */
+    flex-direction: row;
 }
 
 .product-info {
-    flex: 1; /* Ocupa o espaço restante na linha */
+    flex: 1;
+}
+
+.image-gallery {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 450px;
+    height: auto;
+}
+
+.product-image {
+    max-width: auto; /* Reduzi o tamanho da imagem principal */
+    max-height: auto;
+    border: 2px solid #a0a0a0;
+    border-radius: 0.7rem;
+    padding: 1px;
+    transition: transform 0.2s; /* Efeito de transição suave */
 }
 
 .image-thumbnails {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 15px;
+    justify-content: flex-start; /* Posiciona as miniaturas à direita */
+    padding: 10px;
 }
 
-.product-image img {
-    max-width: 300px;
-    max-height: 300px;
-    border: 2px solid #a0a0a0;
-    border-radius: 0.7rem;
+.image-thumbnails .thumbnail.active {
+    border: 2px solid #8c00ff;
 }
 
-.image-thumbnails img {
-    width: 100px;
-    height: 100px;
+.image-thumbnails .thumbnail {
+    width: 4rem; /* altera o tamanho das miniaturas */
+    height: auto;
     cursor: pointer;
     border: 2px solid #a0a0a0;
     border-radius: 0.7rem;
 }
 
-/* Estilos do rodapé */
+/* Additional styles for image thumbnails if needed */
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
+
+/* Additional CSS styles for gallery and image zoom if needed */

@@ -47,17 +47,26 @@ li {
     color: #555;
 }
 
+ul li {
+    margin-right: 20px; /* Adicione margem entre os itens */
+}
+
+ul br {
+    flex-basis: 100%; /* Define a quebra de linha para ocupar toda a largura */
+    height: 0; /* Define a altura da quebra de linha para zero */
+}
+
 button.buy-button {
-    background-color: #007bff;
+    background-color: #a200ff;
     color: #fff;
     border: none;
-    padding: 1px 1px;
+    padding: 10px 10px;
     font-size: 18px;
     cursor: pointer;
 }
 
 button.buy-button:hover {
-    background-color: #0056b3;
+    background-color: #7500d4;
 }
 
 .product-details {
@@ -67,11 +76,18 @@ button.buy-button:hover {
 
 .product-info {
     flex: 1;
+    order: 1; /* Altere a ordem para 1 para manter a "product-info" no topo */
+}
+
+.info2 {
+    flex: 1;
+    order: 2; /* Altere a ordem para 2 para colocar "info2" logo abaixo de "product-info" */
 }
 
 .image-gallery {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column; /* Altere a direção para "column" para posicionar as miniaturas abaixo da imagem principal */
+    align-items: center; /* Centralize as miniaturas horizontalmente */
     gap: 20px;
     position: relative;
     overflow: hidden;

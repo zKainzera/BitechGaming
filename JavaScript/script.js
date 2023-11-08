@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
 let isRunning = false;
 let timer;
 let initialTimeInSeconds = 48 * 60 * 60;

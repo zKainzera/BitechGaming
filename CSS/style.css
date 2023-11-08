@@ -45,9 +45,9 @@
 
 /* Estilos para os ícones */
 .icons img {
-  width: 20px;
+  width: 22px;
   /* Ajuste a largura conforme necessário */
-  height: 20px;
+  height: auto;
   /* Ajuste a altura conforme necessário */
   margin-left: 10px;
   /* Espaçamento entre os ícones */

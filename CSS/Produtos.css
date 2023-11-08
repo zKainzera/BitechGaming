@@ -82,14 +82,15 @@
 }
 
 .sacola {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: auto;
   background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%), #D9D9D9;
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 0.7rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
   justify-content: center;
 }
 
@@ -104,11 +105,12 @@
 }
 
 .comprar {
-  width: 200px;
-  height: 35px;
+  width: 10.9rem;
+  max-height: auto;
   background: linear-gradient(0deg, #8C52FF 0%, #8C52FF 100%);
   text-align: center;
   line-height: 35px;
+  cursor: pointer;
   color: #fff;
 }
 

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="CSS/cadastro.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <title>Bitech Gaming | Melhor Loja de Hardwares</title>
   <link rel="icon" href="img/Logo Base.png" type="image/x-icon">
@@ -13,35 +14,85 @@
 
 <body>
 
-  <div class="page">
-    <div class="container">
-      <div class="left">
-        <div class="login">Login</div>
-        <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
-      </div>
-      <div class="right">
-        <svg viewBox="0 0 320 300">
-          <defs>
-            <linearGradient inkscape:collect="always" id="linearGradient" x1="13" y1="193.49992" x2="307" y2="193.49992"
-              gradientUnits="userSpaceOnUse">
-              <stop style="stop-color:#ff00ff;" offset="0" id="stop876" />
-              <stop style="stop-color:#ff0000;" offset="1" id="stop878" />
-            </linearGradient>
-          </defs>
-          <path
-            d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
-        </svg>
-        <div class="form">
-          <label for="email">Email</label>
-          <input type="email" id="email">
-          <label for="password">Password</label>
-          <input type="password" id="password">
-          <input type="submit" id="submit" value="Submit">
-        </div>
-      </div>
+  <section id="form">
+   
+    <div id="toggle-forms">
+        <button class="waves-effect waves-light active" id="login">Login</button>
+        <button class="waves-effect waves-light" id="register">Registre-se</button>
+        <a href="index.html" class="waves-effect waves-light">
+          <button id="voltar">Voltar</button>
+        </a>
     </div>
-  </div>
-
+    <form class="col s12">
+        <div class="row center-align">
+            <h4 class="texto branco">login</h4>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <div class="row center-align">
+            <button class="btn waves-effect waves-light">
+                Login
+            </button>
+        </div>
+              <p class="forgot">Forgot Password?</p>
+        <ul class="animate">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </form>
+    <form class="col s12" >
+        <div class="row center-align">
+            <h4 class="white-text">register</h4>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <div class="row">
+                <div class="input-field">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Re-Password</label>
+                </div>
+            </div>
+        <div class="row center-align">
+            <button class="btn waves-effect waves-light">
+                Register
+            </button>
+        </div>
+        <ul class="animate">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </form>
+</section>
 
   <script src="JavaScript/cadastro.js"></script>
 </body>

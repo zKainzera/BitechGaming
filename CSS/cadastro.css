@@ -15,7 +15,29 @@
     height: 450px;
     overflow: hidden;
 }
+.input-field label.active,
+.input-field input:focus ~ label {
+    color: #FFF !important;
+}
 
+.input-field input:focus ~ label {
+    color: rgb(140, 82, 255) !important;
+}
+
+.input-field input:focus {
+    border-bottom-color: rgb(140, 82, 255) !important;
+}
+.funciona{
+    border:none;
+    background:none;
+    background-color: #34495e;
+    border: 1px solid #22303e;
+    color: #ffffff;
+    float:left;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    padding:2px 10px;
+}
 #form #toggle-forms{
     position: absolute;
     top: 15px;

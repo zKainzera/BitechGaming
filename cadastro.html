@@ -2,99 +2,96 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="CSS/cadastro.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <title>Bitech Gaming | Melhor Loja de Hardwares</title>
-  <link rel="icon" href="img/Logo Base.png" type="image/x-icon">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/cadastro.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <title>Bitech Gaming | Melhor Loja de Hardwares</title>
+    <link rel="icon" href="img/Logo Base.png" type="image/x-icon">
 </head>
 
 <body>
-
-  <section id="form">
-   
-    <div id="toggle-forms">
-        <button class="waves-effect waves-light active" id="login">Login</button>
-        <button class="waves-effect waves-light" id="register">Registre-se</button>
-        <a href="index.html" class="waves-effect waves-light">
-          <button id="voltar">Voltar</button>
-        </a>
-    </div>
-    <form class="col s12">
-        <div class="row center-align">
-            <h4 class="texto branco">login</h4>
+    <section id="form">
+        <div id="toggle-forms">
+            <button class="waves-effect waves-light active" id="login">Login</button>
+            <button class="waves-effect waves-light" id="register">Registre-se</button>
+            <a href="index.html" class="waves-effect waves-light">
+                <button id="voltar" class="funciona">Voltar</button>
+            </a>
         </div>
-        <div class="row">
-            <div class="input-field">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
+        <form class="col s12" id="login-form">
+            <div class="row center-align">
+                <h4 class="texto branco">login</h4>
             </div>
-        </div>
-        <div class="row">
-            <div class="input-field">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-            </div>
-        </div>
-        <div class="row center-align">
-            <button class="btn waves-effect waves-light">
-                Login
-            </button>
-        </div>
-              <p class="forgot">Forgot Password?</p>
-        <ul class="animate">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </form>
-    <form class="col s12" >
-        <div class="row center-align">
-            <h4 class="white-text">register</h4>
-        </div>
-        <div class="row">
-            <div class="input-field">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-            </div>
-        </div>
-        <div class="row">
+            <div class="row">
                 <div class="input-field">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Re-Password</label>
+                    <input id="login-email" type="email" class="validate">
+                    <label for="login-email">Email</label>
                 </div>
             </div>
-        <div class="row center-align">
-            <button class="btn waves-effect waves-light">
-                Register
-            </button>
-        </div>
-        <ul class="animate">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </form>
-</section>
+            <div class="row">
+                <div class="input-field">
+                    <input id="login-password" type="password" class="validate">
+                    <label for="login-password">Password</label>
+                </div>
+            </div>
+            <div class="row center-align">
+                <button class="btn waves-effect waves-light">
+                    Login
+                </button>
+            </div>
+            <p class="forgot">Forgot Password?</p>
+            <ul class="animate">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </form>
+        <form class="col s12" id="register-form">
+            <div class="row center-align">
+                <h4 class="white-text">register</h4>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="register-email" type="email" class="validate">
+                    <label for="register-email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="register-password" type="password" class="validate">
+                    <label for="register-password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="confirm-password" type="password" class="validate">
+                    <label for="confirm-password">Re-Password</label>
+                </div>
+            </div>
+            <div class="row center-align">
+                <button class="btn waves-effect waves-light">
+                    Register
+                </button>
+            </div>
+            <ul class="animate">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                li></li>
+            </ul>
+        </form>
+    </section>
 
-  <script src="JavaScript/cadastro.js"></script>
+    <script src="JavaScript/cadastro.js"></script>
 </body>
 
 </html>

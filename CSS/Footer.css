@@ -1,8 +1,11 @@
 footer {
-    background-color: #292929;
+    background-color: #151414;
     color: #fff;
     padding: 20px 0;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+
 
 .rodape-container {
     display: flex;
@@ -36,4 +39,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold; /* Adiciona negrito ao texto */
 }

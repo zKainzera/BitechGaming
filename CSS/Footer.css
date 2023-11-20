@@ -42,7 +42,8 @@ a:hover {
 }
 
 .copyright {
-    margin-top: 1rem;
+
+    margin: 2rem 0;
     text-align: center;
     font-weight: bold; /* Adiciona negrito ao texto */
 }

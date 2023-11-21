@@ -212,6 +212,18 @@ font-size: 16px;
     margin-right: 20%;
     background-color: #ffffff;
   }
+
+  .especificacao-tecnica2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #ffffff;
+  }
   
   .texto {
     flex: 1;

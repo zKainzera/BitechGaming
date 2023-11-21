@@ -49,12 +49,21 @@
 
 .icons-navbar img {
   width: 25px;
-  /* Ajuste a largura conforme necessário */
   height: auto;
-  /* Ajuste a altura conforme necessário */
-  margin-left: 10px;
-  /* Espaçamento entre os ícones */
   cursor: pointer;
+  /* Ajuste os estilos dos ícones conforme desejado */
+}
+
+.icons-navbar a {
+  margin-right: 10px;
+  /* Adiciona espaçamento entre os ícones (pode ajustar conforme necessário) */
+}
+
+.icons-navbar {
+  display: flex;
+  /* Torna os ícones filhos da div flexíveis (em linha) */
+  align-items: center;
+  /* Alinha os ícones verticalmente no centro */
 }
 
 .icon{

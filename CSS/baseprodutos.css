@@ -181,7 +181,8 @@ font-size: 16px;
 }
 
 .info2 {
-    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: left; /* Reverte o texto para a esquerda */
 }
 
@@ -190,7 +191,8 @@ font-size: 16px;
 }
 
 .descricao-produto {
-    margin-bottom: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: left; /* Reverte o texto para a esquerda */
 }
 
@@ -198,3 +200,42 @@ font-size: 16px;
     line-height: 1.6;
 }
 
+
+.especificacao-tecnica {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #ffffff;
+  }
+  
+  .texto {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .texto h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .texto p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .imagem {
+    flex: 1;
+  }
+  
+  .imagem img {
+    width: 100%;
+    height: auto;
+  }
+  

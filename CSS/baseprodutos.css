@@ -10,7 +10,7 @@
     font-family: 'Kodchasan';
   }
 
-
+/* Importando fonte adicional */
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
 
 body {
@@ -32,7 +32,7 @@ h1, h2 {
 }
 
 ul {
-    list-style: none;
+    list-style: none;/* Remove marcadores de lista padrão */
     padding: 0;
 }
 
@@ -92,7 +92,7 @@ a:hover {
 }
 
 
-
+/* Estilos para botões de valores */
 .valores button {
     width: 100%;
     padding: 12px 20px;
@@ -124,7 +124,7 @@ a:hover {
 }
 
 .valores button:hover::before {
-    transform: scale(1.1);
+    transform: scale(1.1);/* Aumenta a escala do elemento de conteúdo ao passar o mouse sobre o botão */
 }
 
 .product-image img {

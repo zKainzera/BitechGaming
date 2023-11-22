@@ -1,49 +1,60 @@
+/* Estilos para o rodapé */
 footer {
-    background-color: #151414;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #151414; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Preenchimento interno do rodapé */
 }
 
+/* Importação da fonte do Google */
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
 
-
+/* Container do rodapé com flexbox */
 .rodape-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: flex; /* Exibe como flexbox */
+    justify-content: space-around; /* Distribuição do espaço ao redor dos itens */
+    align-items: flex-start; /* Alinha os itens ao topo */
 }
 
-.info, .horario, .redes-sociais, .informacoes-direita, .outras-informacoes {
-    flex: 1;
-    padding: 0 20px;
+/* Classes para diferentes seções do rodapé */
+.info,
+.horario,
+.redes-sociais,
+.informacoes-direita,
+.outras-informacoes {
+    flex: 1; /* Flexibilidade dos itens */
+    padding: 0 20px; /* Preenchimento interno */
 }
 
+/* Estilos para títulos */
 h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #8C52FF;
+    font-size: 20px; /* Tamanho da fonte para títulos */
+    margin-bottom: 10px; /* Margem inferior */
+    color: #8C52FF; /* Cor do título */
 }
 
+/* Estilos para parágrafos */
 p {
-    font-size: 14px;
-    margin: 5px 0;
+    font-size: 14px; /* Tamanho da fonte para parágrafos */
+    margin: 5px 0; /* Margem interna */
 }
 
+/* Estilos para links */
 a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin: 5px 0;
-    font-size: 14px;
+    display: block; /* Exibe como bloco */
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove a decoração padrão dos links */
+    margin: 5px 0; /* Margem interna */
+    font-size: 14px; /* Tamanho da fonte para links */
 }
 
+/* Efeito hover nos links */
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
 }
 
+/* Estilos para o texto de direitos autorais */
 .copyright {
-
-    margin: 2rem 0;
-    text-align: center;
+    margin: 2rem 0; /* Margem superior e inferior */
+    text-align: center; /* Alinhamento ao centro */
     font-weight: bold; /* Adiciona negrito ao texto */
 }

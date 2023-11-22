@@ -1,0 +1,3 @@
+PLACA MÃE BIOSTAR Z690GTA, CHIPSET Z690, INTEL LGA 1700, ATX, DDR4
+Placa mãe ATX que suporta Processadores Intel de 12ª geração, Socket LGA 1700. Conta com chip Z690, suporte para memórias DDR4 de até 5000MHz, PCI Express 5.0 e possui um slot PCIe M.2 4.0 (64GB/s).
+

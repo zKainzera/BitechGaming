@@ -1,13 +1,17 @@
+/* Importa a fonte Rubik de pesos 400 e 700 do Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
 
-*{ 
+/* Define a fonte Rubik como a fonte padrão para todos os elementos */
+* {
     font-family: 'Rubik', sans-serif;
 }
 
+/* Estilo do formulário */
 #form {
+    /* Posicionamento, tamanho, margem, sombra, borda arredondada, cor de fundo e altura do formulário */
     margin: 50px auto;
     width: 350px;
-    padding:45px 30px 15px;
+    padding: 45px 30px 15px;
     position: relative;
     box-shadow: 5px 5px 25px rgba(0,0,0,.2);
     border-radius: 1px;
@@ -15,30 +19,39 @@
     height: 450px;
     overflow: hidden;
 }
+
+/* Estilo para os rótulos ativos e campos de entrada focados */
 .input-field label.active,
 .input-field input:focus ~ label {
-    color: #FFF !important;
+    color: #FFF !important; /* Cor do texto para rótulos ativos */
 }
 
+/* Estilo para rótulos quando o campo de entrada está em foco */
 .input-field input:focus ~ label {
-    color: rgb(140, 82, 255) !important;
+    color: rgb(140, 82, 255) !important; /* Cor do texto para campos de entrada focados */
 }
 
+/* Estilo para campos de entrada em foco */
 .input-field input:focus {
-    border-bottom-color: rgb(140, 82, 255) !important;
+    border-bottom-color: rgb(140, 82, 255) !important; /* Cor da borda inferior para campos de entrada focados */
 }
-.funciona{
-    border:none;
-    background:none;
+/* Estilo para a classe .funciona */
+.funciona {
+    /* Remove a borda, fundo e define a cor de fundo, borda, cor do texto e alinhamento */
+    border: none;
+    background: none;
     background-color: #34495e;
     border: 1px solid #22303e;
     color: #ffffff;
-    float:left;
+    float: left;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
-    padding:2px 10px;
+    padding: 2px 10px;
 }
-#form #toggle-forms{
+
+/* Estilo para o contêiner #toggle-forms dentro do #form */
+#form #toggle-forms {
+    /* Define o posicionamento, borda, borda arredondada, overflow e z-index */
     position: absolute;
     top: 15px;
     right: 30px;
@@ -48,19 +61,23 @@
     z-index: 99;
 }
 
-#form #toggle-forms > button { /** Login e Registro**/
-  border:none;
-  background:none;
-  background-color: #34495e;
-  border: 1px solid #22303e;
-  color: #ffffff;
-  float:left;
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-  padding:2px 10px;
+/* Estilo para os botões dentro de #toggle-forms */
+#form #toggle-forms > button {
+    /* Remove a borda, fundo e define a cor de fundo, borda, cor do texto, alinhamento e padding */
+    border: none;
+    background: none;
+    background-color: #34495e;
+    border: 1px solid #22303e;
+    color: #ffffff;
+    float: left;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 2px 10px;
 }
 
-#form #toggle-forms > button:first-of-type{
+/* Estilo específico para o primeiro botão dentro de #toggle-forms */
+#form #toggle-forms > button:first-of-type {
+    /* Remove a borda à direita e define a borda arredondada no canto superior esquerdo */
     border-right: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
@@ -68,44 +85,57 @@
     border-bottom-left-radius: 20px;
 }
 
+/* Estilo para o botão ativo dentro de #toggle-forms */
 #form #toggle-forms > button.active {
+    /* Define a cor de fundo quando o botão está ativo */
     background-color: rgb(140, 82, 255);
 }
 
-#form form h4{
+/* Estilo para o título (h4) dentro dos formulários */
+#form form h4 {
+    /* Define a transformação para capitalizar, cor do texto, tamanho da fonte, espaçamento de linha, margens e família de fontes */
     text-transform: capitalize;
-    color:#FFF;
+    color: #FFF;
     font-size: 2.28rem;
     line-height: 110%;
     margin: 1.14rem 0 0.912rem 0;
     font-family: 'Rubik', sans-serif;
-   padding-left: 100px;
-   display: flex;
-    
+    padding-left: 100px;
+    display: flex;
 }
 
+/* Estilo para os rótulos ativos dentro dos campos de entrada */
 .input-field label.active {
+    /* Define a cor do texto para rótulos ativos */
     color: #FFF !important;
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Define o tamanho da fonte para rótulos ativos */
 }
 
+/* Estilo para campos de entrada em foco */
 #form form input:focus {
+    /* Define a cor da borda inferior quando o campo está em foco */
     border-bottom-color: rgb(140, 82, 255) !important;
 }
 
-#form .row >button{
-    background-color:rgb(140, 82, 255);
+/* Estilo para botões dentro da classe .row */
+#form .row > button {
+    /* Define a cor de fundo para os botões dentro da classe .row */
+    background-color: rgb(140, 82, 255);
 }
 
+
+/* Define a cor do texto e o recuo à esquerda para os inputs */
 input {
     color: #FFF;
     padding-left: 15px !important;
 }
 
-#form form{
-    padding:45px 30px 15px;
+/* Estilo para os formulários dentro de #form */
+#form form {
+    /* Define o preenchimento, posicionamento absoluto, cor de fundo, transição, altura, largura e índice z */
+    padding: 45px 30px 15px;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
@@ -114,24 +144,35 @@ input {
     z-index: 2;
 }
 
+/* Estilo para o último formulário quando #form está ativo */
 #form form:last-of-type {
+    /* Move o último formulário para a direita da tela */
     left: 100%;
 }
 
+/* Estilo para o primeiro formulário quando #form está ativo */
 #form.active form:first-of-type {
+    /* Move o primeiro formulário para a esquerda da tela */
     left: -100% !important;
 }
 
-#form.active form:last-of-type{
-    left:0 !important;
+/* Estilo para o último formulário quando #form está ativo */
+#form.active form:last-of-type {
+    /* Mantém o último formulário na tela */
+    left: 0 !important;
 }
 
+/* Media query para telas menores que 767px */
 @media (max-width: 767px) {
+    /* Modifica a largura do formulário quando a tela é menor que 767px */
     #form {
         width: 290px !important;
     }
 }
+
+/* Estilos para a animação */
 .animate {
+    /* Define altura, exibição, margem, preenchimento e largura */
     height: 100%;
     display: block;
     margin: 0;
@@ -139,19 +180,23 @@ input {
     width: 100%;
 }
 
+/* Estilos para os itens dentro da animação */
 .animate > li {
+    /* Define posicionamento absoluto, tamanho, posição inicial, cor de fundo, ordem de empilhamento, overflow e animação */
     position: absolute;
     height: 50px;
     width: 50px;
     top: 100%;
     left: 10px;
-    background-color:  rgba(255,255,255,.1);
+    background-color: rgba(255,255,255,.1);
     z-index: -1;
     overflow: hidden;
     animation: move 10s linear infinite;
 }
 
+/* Estilos específicos para cada item da animação */
 .animate > li:nth-last-of-type(2) {
+    /* Define a posição e tamanho para o segundo item da animação */
     left: 70px;
     animation-delay: 3.5s;
     height: 15px;
@@ -189,16 +234,26 @@ input {
     width: 35px;
 }
 
+/* (Mais estilos específicos para cada item da animação seguem abaixo, até o item 7) */
 
+/* Animação de movimento */
 @keyframes move {
-    to {top: -50px;transform: rotate(360deg)}
+    /* Define o movimento dos itens na animação */
+    to {
+        top: -50px;
+        transform: rotate(360deg);
+    }
 }
 
-.forgot{
+/* Estilo para o texto 'esqueci minha senha' */
+.forgot {
+    /* Define a cor do texto para o texto 'esqueci minha senha' */
     color: rgb(140, 82, 255);
 }
 
+/* Estilo de hover para o texto 'esqueci minha senha' */
 .forgot:hover {
+    /* Define a sublinhado e o cursor ao passar o mouse sobre 'esqueci minha senha' */
     text-decoration: underline;
     cursor: pointer;
 }

@@ -1,118 +1,126 @@
+/* Importação da fonte do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* Reset de estilos para todos os elementos */
 * {
-  /* O asterisco utilizado serve para remover a formatação de CSS Original do Site, assim podedno modificar na Raiz do Site  */
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-family: 'Kodchasan';
+  box-sizing: border-box; /* Define a caixa de modelo como border-box */
+  list-style: none; /* Remove os estilos de lista */
+  margin: 0; /* Remove as margens */
+  padding: 0; /* Remove o preenchimento */
+  text-decoration: none; /* Remove a decoração de texto padrão */
+  font-family: 'Kodchasan'; /* Define a fonte para todo o documento */
 }
 
+/* Container principal para os cards */
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* Distribui os cards igualmente na horizontal */
+  display: flex; /* Exibe como flexbox */
+  flex-wrap: wrap; /* Permite a quebra de linha dos cards */
+  justify-content: space-between; /* Distribui os cards igualmente na horizontal */
 }
 
+/* Estilos para os cards individuais */
 .card {
-  width: calc(25% - 20px);
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
-  background-color: #ffff;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: calc(25% - 20px); /* Largura dos cards com margens */
+  text-align: center; /* Alinhamento do texto centralizado */
+  border: 1px solid #ccc; /* Borda do card */
+  border-radius: 10px; /* Borda arredondada */
+  margin: 10px; /* Margem externa dos cards */
+  padding: 10px; /* Preenchimento interno dos cards */
+  background-color: #ffff; /* Cor de fundo do card */
+  position: relative; /* Posição relativa para o posicionamento absoluto */
+  display: flex; /* Exibe como flexbox */
+  flex-direction: column; /* Direção da disposição dos elementos */
+  justify-content: space-between; /* Espaçamento entre os elementos */
 }
 
 
+/* Estilos para a imagem dentro do card */
 .image {
-  width: 100%;
-  max-height: 100%;
-  display: flex;
-  justify-content: center;
-  /* Centraliza a imagem horizontalmente */
+  width: 100%; /* Largura da imagem */
+  max-height: 100%; /* Altura máxima da imagem */
+  display: flex; /* Exibe como flexbox */
+  justify-content: center; /* Centraliza a imagem horizontalmente */
 }
 
 
+/* Estilos para a imagem do card */
 .image img {
-  max-width: 48%;
-  height: auto;
-  /* Mantém a proporção original da imagem */
+  max-width: 48%; /* Largura máxima da imagem */
+  height: auto; /* Altura automática para manter a proporção */
 }
 
+/* Estilos para a legenda do card */
 .legenda {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 2px;
-  text-align: left;
-  font-family: Kodchasan;
+  font-size: 20px; /* Tamanho da fonte para a legenda */
+  font-weight: 700; /* Peso da fonte */
+  margin-top: 2px; /* Margem superior */
+  text-align: left; /* Alinhamento do texto à esquerda */
+  font-family: Kodchasan; /* Fonte da legenda */
 }
 
+/* Estilos para o preço no card */
 .preco {
-  color: #8C52FF;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: left;
+  color: #8C52FF; /* Cor do preço */
+  font-size: 18px; /* Tamanho da fonte para o preço */
+  font-weight: 700; /* Peso da fonte */
+  text-align: left; /* Alinhamento do texto à esquerda */
 }
 
+/* Estilos para o preço tachado no card */
 .tachado {
-  text-decoration: line-through;
-  font-size: 16px;
-  text-align: left;
-  color: #666666;
+  text-decoration: line-through; /* Adiciona uma linha no texto */
+  font-size: 16px; /* Tamanho da fonte para o texto tachado */
+  text-align: left; /* Alinhamento do texto à esquerda */
+  color: #666666; /* Cor do texto tachado */
 }
 
+/* Estilos para o método de pagamento Pix no card */
 .pix {
-  font-size: 16px;
-  text-align: left;
-  font-weight: 400;
-  color: #666;
+  font-size: 16px; /* Tamanho da fonte para o texto do Pix */
+  text-align: left; /* Alinhamento do texto à esquerda */
+  font-weight: 400; /* Peso da fonte */
+  color: #666; /* Cor do texto do Pix */
 }
 
+/* Estilos para a imagem do SAC no card */
 .sac_img {
-  width: 24px;
-  height: 30px;
-  margin-top: 5px;
+  width: 24px; /* Largura da imagem do SAC */
+  height: 30px; /* Altura da imagem do SAC */
+  margin-top: 5px; /* Margem superior */
 }
 
+/* Estilos para o ícone de sacola no card */
 .sacola {
-  width: 2.5rem;
-  height: auto;
-  background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%), #D9D9D9;
-  position: absolute;
-  bottom: 10px;
-  left: 0.7rem;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  justify-content: center;
+  width: 2.5rem; /* Largura da sacola */
+  height: auto; /* Altura automática */
+  background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%), #D9D9D9; /* Gradiente de fundo */
+  position: absolute; /* Posição absoluta */
+  bottom: 10px; /* Distância do fundo */
+  left: 0.7rem; /* Distância da esquerda */
+  display: flex; /* Exibe como flexbox */
+  align-items: center; /* Alinhamento vertical dos itens */
+  cursor: pointer; /* Altera o cursor para ponteiro */
+  justify-content: center; /* Alinhamento horizontal dos itens */
 }
 
+/* Container para o botão de compra */
 .comprar-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 10px;
-  /* Alinhe verticalmente os elementos dentro do contêiner */
-
+  display: flex; /* Exibe como flexbox */
+  align-items: center; /* Alinhamento vertical dos elementos */
+  justify-content: center; /* Alinhamento horizontal dos elementos */
+  flex-direction: column; /* Direção da disposição dos elementos */
+  margin-top: 10px; /* Margem superior */
 }
 
+/* Botão de compra */
 .comprar {
-  width: 10.9rem;
-  max-height: auto;
-  background: linear-gradient(0deg, #8C52FF 0%, #8C52FF 100%);
-  text-align: center;
-  line-height: 35px;
-  cursor: pointer;
-  color: #fff;
+  width: 10.9rem; /* Define a largura do botão de compra */
+  max-height: auto; /* Altura máxima automática */
+  background: linear-gradient(0deg, #8C52FF 0%, #8C52FF 100%); /* Define um gradiente de fundo do botão */
+  text-align: center; /* Alinha o texto ao centro do botão */
+  line-height: 35px; /* Define a altura da linha de texto dentro do botão */
+  cursor: pointer; /* Define o cursor do mouse como ponteiro */
+  color: #fff; /* Define a cor do texto como branco */
 }
 
 .cards {

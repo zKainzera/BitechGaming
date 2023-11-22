@@ -1,67 +1,76 @@
-/* Carrossel CSS com sombra para profundidade */
-
+/* Importação de fontes Google */
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
+/* Define o box-sizing para todos os elementos */
 * {
   box-sizing: border-box;
 }
 
+
+/* Container principal do slideshow */
 .slideshow-container {
-  max-width: 60%;
-  position: relative;
-  margin: auto;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 1); /* Adiciona uma sombra para profundidade */
+  max-width: 60%; /* Largura máxima do contêiner */
+  position: relative; /* Posicionamento relativo para elementos filhos */
+  margin: auto; /* Centraliza horizontalmente */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 1); /* Adiciona sombra para profundidade */
 }
 
+
+/* Oculta os slides */
 .mySlides {
   display: none;
 }
 
+/* Botões de navegação (anterior e próximo) */
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(100, 0, 255);
-  font-weight: bold;
-  font-size: 38px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  cursor: pointer; /* Altera o cursor para ponteiro ao passar por cima */
+  position: absolute; /* Posicionamento absoluto */
+  top: 50%; /* Alinha no centro verticalmente */
+  width: auto; /* Largura automática */
+  margin-top: -22px; /* Ajuste de margem para o posicionamento vertical */
+  padding: 16px; /* Preenchimento interno */
+  color: rgb(100, 0, 255); /* Cor do texto */
+  font-weight: bold; /* Peso da fonte */
+  font-size: 38px; /* Tamanho da fonte */
+  transition: 0.6s ease; /* Transição suave */
+  border-radius: 0 3px 3px 0; /* Borda arredondada */
+  user-select: none; /* Não permite a seleção do texto */
 }
 
+/* Botão de próxima imagem */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: 0; /* Alinha à direita */
+  border-radius: 3px 0 0 3px; /* Borda arredondada */
 }
 
+/* Efeito hover nos botões de navegação */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 20, 0.384);
-  border-radius: 0.2cm;
+  background-color: rgba(0, 0, 20, 0.384); /* Altera a cor de fundo com transparência */
+  border-radius: 0.2cm; /* Borda arredondada no hover */
 }
 
+/* Indicadores de pontos para cada slide */
 .dot {
-  cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 0 2px;
-  background-color: #727272;
-  border-radius: 100%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  cursor: pointer; /* Altera o cursor para ponteiro ao passar por cima */
+  height: 16px; /* Altura do ponto */
+  width: 16px; /* Largura do ponto */
+  margin: 0 2px; /* Margem entre os pontos */
+  background-color: #727272; /* Cor de fundo do ponto */
+  border-radius: 100%; /* Borda arredondada para formar um círculo */
+  display: inline-block; /* Exibe os pontos em linha */
+  transition: background-color 0.6s ease; /* Transição suave da cor de fundo */
 }
 
+/* Ponto ativo ou ponto em hover */
 .active,
 .dot:hover {
-  background-color: #9900ff;
+  background-color: #9900ff; /* Cor de fundo do ponto ativo ou em hover */
 }
 
+/* Efeito de fade para os slides */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -69,6 +78,7 @@
   animation-duration: 0.5s;
 }
 
+/* Animação para fade */
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;

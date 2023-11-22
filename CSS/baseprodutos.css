@@ -68,9 +68,9 @@ a:hover {
     margin-left: 0.8rem;
 }
 
-.conteudo{
-    display: flex;
-    margin: auto;
+.conteudo header{
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .image-thumbnails img {

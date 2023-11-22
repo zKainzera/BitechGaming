@@ -222,7 +222,7 @@ font-size: 16px;
     margin-bottom: 20px;
     margin-left: 20%;
     margin-right: 20%;
-    background-color: #ffffff;
+    background-color: #000000;
   }
   
   .texto {
@@ -231,11 +231,25 @@ font-size: 16px;
     background-color: #ffffff;
   }
   
-  .texto h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+
+  .texto2 {
+    flex: 1;
+    padding: 20px;
+    background-color: #000000;
   }
+
+  .texto h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
   
+
+    .texto2 h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #ffffff
+      }
+
   .texto p {
     font-size: 16px;
     color: #333;
@@ -247,7 +261,23 @@ font-size: 16px;
   }
   
   .imagem img {
-    width: 100%;
+    width: 90%;
     height: auto;
+  }
+
+  .texto2 p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  .imagem2 {
+    flex: 1;
+  }
+  
+  .imagem2 img {
+    width: 90%;
+    height: auto;
+  
   }
   

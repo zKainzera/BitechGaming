@@ -123,6 +123,63 @@
             </div>
             <p></p><p></p><p></p><p></p>
 
+            <button class="botao-especificacoes" onclick="toggleEspecificacoes()">Mostrar Especificações Técnicas</button>
+            <div id="secaoInformacoesTecnicas" style="display: none;">
+              <h2 class="textoSVG">
+                    <svg width="24" viewBox="0 0 24 24" class="IconAlert">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM11.9183 19.3859C10.8643 19.3859 10.0283 18.5943 10.0283 17.6134C10.0283 16.6326 10.8643 15.841 11.9183 15.841C12.9722 15.841 13.8082 16.6326 13.8082 17.6134C13.8082 18.5943 12.9722 19.3859 11.9183 19.3859ZM10.5464 12.7859C10.6133 13.4935 11.2074 14.0342 11.9183 14.0342C12.6291 14.0342 13.2233 13.4935 13.2902 12.7859L13.8278 7.09862C13.9342 5.97299 13.0489 5 11.9183 5C10.7876 5 9.90227 5.97299 10.0087 7.09862L10.5464 12.7859Z" fill="#ae00d9"></path>
+                    </svg> Informações Técnicas
+                </h2>
+                <div class="CaracteristicasTecnica">
+                  <p><strong>Características:</strong></p>
+                  <p>- Marca: NZXT</p>
+                  <p>- Modelo: H511 Flow</p>
+                  <p><strong>Especificações:</strong></p>
+                  <p>- Suporte para placa-mãe: Mini-ITX, MicroATX, ATX</p>
+                  <p>- Tipo de gabinete: Torre Média Compacta</p>
+                  <p>- Material da Caixa: SGCC Aço, Vidro Temperado</p>
+                  <p>- Folga máxima do cooler da CPU: 165 milímetros</p>
+                  <p>- Liberação máxima da GPU: 360 milímetros</p>
+                  <p>- Folga do Ventilador Frontal e do Radiador: 60 milímetros</p>
+                  <p>- Gerenciamento de cabos: 19 - 23 milímetros</p>
+                  <p>- Portas de E/S Frontais:</p>
+                  <p>  - USB 3.2 Gen 1 Tipo-A: 2</p>
+                  <p>  - Conector de áudio do fone de ouvido: 1</p>
+                  <p>- Slots de expansão: Padrão: 7</p>
+                  <p>- Compartimentos: 2,5": 2 + 1, 3,5": 2 + 1</p>
+                  <p>- Suporte para ventilador:</p>
+                  <p>  - Frente: 2 x 120 mm / 2 x 140 mm</p>
+                  <p>  - Topo: 1 x 120 mm / 1 x 140 mm</p>
+                  <p>  - Traseira: 1 x 120 mm</p>
+                  <p>  - Filtros: Todas as entradas de ar</p>
+                  <p>- Ventiladores incluídos:</p>
+                  <p>  - Frente: 1 x Aer F 120mm (versão da caixa)</p>
+                  <p>  - Traseira: 1 x Aer F 120mm (versão da caixa)</p>
+                  <p>- Suporte do radiador:</p>
+                  <p>  - Frente: 280 mm</p>
+                  <p>  - Traseira: 120 mm</p>
+                  <p>- Especificações do ventilador:</p>
+                  <p>  - Modelo: Aer F 120mm (Versão da Caixa)</p>
+                  <p>  - Velocidade: 1.200 ± 200 RPM</p>
+                  <p>  - Fluxo de ar: 50,42 CFM</p>
+                  <p>  - Ruído: 28 dBA</p>
+                  <p>  - Consequência: Rolamento de rifle</p>
+                  <p>  - Conector do Ventilador: 3 pinos</p>
+                  <p>- Conteúdo da Embalagem:</p>
+                  <p>  - 1x H511 Flow</p>
+                  <p>  - 2x Aer F 120mm (Versão da Caixa)</p>
+                  <p>  - 1x Divisor de entrada de áudio de fone de ouvido</p>
+                  <p>  - 1x Cabo Breakout</p>
+                  <p>  - 1x Acessórios de instalação</p>
+                  <p>  - 1x Manual</p>
+              <p></p>
+                <strong>Peso:</strong> 14344 gramas (bruto com embalagem)
+              </div>
+          </div>
+            </div>
+
+          <p class="fa-paragraph"></p>
+
             <div class="especificacao-tecnica">
               <div class="texto">
                 <h2>
@@ -221,5 +278,16 @@
             
 
     <script src="JavaScript/produto.js"></script>
+    <script>
+      function toggleEspecificacoes() {
+          var secaoEspecificacoes = document.getElementById('secaoInformacoesTecnicas');
+          
+          if (secaoEspecificacoes.style.display === 'none') {
+              secaoEspecificacoes.style.display = 'block';
+          } else {
+              secaoEspecificacoes.style.display = 'none';
+          }
+      }
+  </script>
 </body>
 </html>

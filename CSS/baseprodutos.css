@@ -22,10 +22,63 @@ body {
 }
 
 header h1,p{
-    margin-left: 1.2rem;
     display: flex;
 }
 
+header{
+    margin-left: 30vh;
+    display: row;
+    max-width: 78rem;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.botao-especificacoes {
+    display: block;
+    width: 500px;
+    padding: 10px;
+    margin-left: 30vh; 
+    margin-top: 2vh; 
+    margin-bottom: 2vh;
+    background-color: #818181;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s; /* Transição de 0.3 segundos */
+}
+
+.botao-especificacoes:hover {
+    background-color: #8900a1;
+}
+
+/* Estilos adicionais podem ser incluídos aqui */
+#secaoInformacoesTecnicas {
+    display: none;
+}
+
+.CaracteristicasTecnica{
+    margin-left: 30vh;
+    display: row;
+    max-width: 78rem;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.fa-paragraph{
+    margin-top: 5rem;
+}
+
+.textoSVG{
+    margin-left: 30vh;
+    display: row;
+}
 
 h1, h2 {
     color: #333;
@@ -194,6 +247,11 @@ font-size: 16px;
     margin-left: 15%;
     margin-right: 15%;
     text-align: left; /* Reverte o texto para a esquerda */
+    max-width: 78rem;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .descricao-produto p {

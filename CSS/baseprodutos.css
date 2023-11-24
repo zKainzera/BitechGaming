@@ -39,9 +39,7 @@ header{
     display: block;
     width: 500px;
     padding: 10px;
-    margin-left: 30vh; 
-    margin-top: 2vh; 
-    margin-bottom: 2vh;
+    margin: 0 auto;
     background-color: #818181;
     color: white;
     border: none;

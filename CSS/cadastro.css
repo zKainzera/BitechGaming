@@ -5,6 +5,13 @@
 * {
     font-family: 'Rubik', sans-serif;
 }
+#register-form {
+    max-height: 400px; /* Ajuste a altura máxima conforme necessário */
+    overflow-y: auto;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    background-color: rgba(44, 62, 80, 0.8); /* Cor rgba com 80% de opacidade */
+}
+
 .bod_cad{
     background-color: #272626;
 }
@@ -204,7 +211,7 @@ input {
 /* Estilos para a animação */
 .animate {
     /* Define altura, exibição, margem, preenchimento e largura */
-    height: 100%;
+    height: 10px;
     display: block;
     margin: 0;
     padding: 0;

@@ -55,7 +55,9 @@
     height: 450px;
     overflow: hidden;
 }
-
+.texto_branco{
+    padding-left: 20px;
+}
 /* Estilo para os rótulos ativos e campos de entrada focados */
 .input-field label.active,
 .input-field input:focus ~ label {

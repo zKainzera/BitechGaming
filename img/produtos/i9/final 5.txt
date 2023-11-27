@@ -1,0 +1,2 @@
+MEMÓRIA INTEL® OPTANE ™ SUPORTADA
+A memória Intel® Optane ™ é uma nova classe revolucionária de memória não volátil que fica entre a memória e o armazenamento do sistema para acelerar o desempenho e a capacidade de resposta do sistema.

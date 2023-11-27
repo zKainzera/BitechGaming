@@ -1,0 +1,2 @@
+TECNOLOGIA HYPER-THREADING INTEL®
+Tecnologia Hyper-Threading Intel® (Tecnologia Intel® HT) oferece dois segmentos de processamento por núcleo físico. Aplicativos altamente segmentados podem fazer trabalhos adicionais paralelamente, concluindo as tarefas mais rapidamente.

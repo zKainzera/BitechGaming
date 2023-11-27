@@ -1,0 +1,162 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #9545a0;
+}
+
+.subtotal,
+.frete,
+.total {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtotal h3,
+.frete h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.total h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.total h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #9545a0;
+    margin: 0;
+}
+
+.installments,
+.discount {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.installments span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.discount {
+    font-size: 18px;
+    text-align: center;
+    color: #9545a0;
+    margin-bottom: 20px;
+}
+
+.btn-continue {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #9545a0;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-continue:hover {
+    background-color: #7d3687;
+}
+
+/* Estilos para a seção de frete */
+.produto {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.produto img {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.detalhes {
+    flex-grow: 1;
+}
+
+.subtotal,
+.total {
+    text-align: right;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #9545a0;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #7d3687;
+}
+
+/* Estilos para a seção de frete */
+.frete {
+    max-width: 300px;
+    margin-left: auto; /* Alterado para alinhar à esquerda */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.frete h3 {
+    margin: 0;
+    padding: 10px;
+    text-align: center; /* Centraliza o texto */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+}
+
+.frete select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.frete select:hover,
+.frete select:focus {
+    border-color: #9545a0;
+}
+
+.frete option {
+    font-size: 14px;
+}

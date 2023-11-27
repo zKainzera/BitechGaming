@@ -58,3 +58,7 @@ a:hover {
     text-align: center; /* Alinhamento ao centro */
     font-weight: bold; /* Adiciona negrito ao texto */
 }
+
+.branco{
+    color: #fff;
+}

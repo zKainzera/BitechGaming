@@ -5,6 +5,8 @@ body {
     padding: 20px;
     background-color: #f5f5f5;
     color: #333;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -12,14 +14,41 @@ h1 {
     color: #9545a0;
 }
 
-.subtotal,
-.frete,
-.total {
-    text-align: center;
-    margin-bottom: 10px;
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    max-width: 800px;
+    margin-top: 20px;
 }
 
-.subtotal h3,
+.content {
+    flex-grow: 1;
+}
+
+.right-content {
+    width: 300px;
+    margin-left: 20px;
+}
+
+/* Estilos para a seção de subtotal */
+.subtotal {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a seção de frete */
+.frete {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .frete h3 {
     margin: 0;
     padding: 10px;
@@ -29,6 +58,7 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para a seção de total */
 .total h2 {
     text-align: center;
     font-size: 24px;
@@ -42,6 +72,7 @@ h1 {
     margin: 0;
 }
 
+/* Estilos para a seção de pagamento */
 .installments,
 .discount {
     text-align: center;
@@ -60,6 +91,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Estilos para botão continuar */
 .btn-continue {
     display: block;
     width: 200px;
@@ -79,7 +111,7 @@ h1 {
     background-color: #7d3687;
 }
 
-/* Estilos para a seção de frete */
+/* Estilos para a seção de produtos no carrinho */
 .produto {
     display: flex;
     border-bottom: 1px solid #ccc;
@@ -98,12 +130,7 @@ h1 {
     flex-grow: 1;
 }
 
-.subtotal,
-.total {
-    text-align: right;
-    font-weight: bold;
-}
-
+/* Estilos para o botão finalizar compra */
 .checkout-btn {
     display: block;
     width: 100%;
@@ -122,41 +149,35 @@ h1 {
     background-color: #7d3687;
 }
 
-/* Estilos para a seção de frete */
-.frete {
-    max-width: 300px;
-    margin-left: auto; /* Alterado para alinhar à esquerda */
+/* Estilos para os radio buttons */
+.tiposdefrete {
     padding: 10px;
+    font-size: 18px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.frete h3 {
+.tiposdefrete h3 {
     margin: 0;
     padding: 10px;
-    text-align: center; /* Centraliza o texto */
-    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
-}
-
-.frete select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #fff;
-    color: #333;
-    outline: none;
-    transition: border-color 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.frete select:hover,
+.tiposdefrete label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o radio button focado */
+.frete select,
 .frete select:focus {
     border-color: #9545a0;
 }
 
 .frete option {
-    font-size: 14px;
+    font-size: 1px;
 }

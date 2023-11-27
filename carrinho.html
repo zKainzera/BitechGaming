@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/carrinho.css">
+    <title>Carrinho Bitech Gaming | Melhor Loja de Hardwares</title>
+</head>
+
+
+<body>
+
+        <h1>Seu Carrinho</h1>
+      
+        <div id="cart-items">
+          <!-- Aqui serão inseridos os itens do carrinho dinamicamente -->
+        </div>
+        <div class="frete">
+            <h3>Opções de Entrega:</h3>
+            <select id="opcoes-entrega">
+                <option value="0.00">   Retire na Loja Mais Próxima       - Entrega em até 7 Dias úteis - Grátis</option>
+                <option value="17.27">  Transportadora Saturno            - Entrega em até 10 dias úteis - R$ 17,27</option>
+                <option value="14.99">  Expresso                          - Entrega em até 6 dias úteis - R$ 14,99</option>
+                <option value="9.99">   Econômico                         - Entrega em até 8 dias úteis - R$ 9,99</option>
+                <option value="32.06">  Transportadora Total Express      - Entrega em até 15 dias úteis - R$ 32,06</option>
+                <option value="36.84">  PAC                               - Entrega em até 18 dias úteis - R$ 36,84</option>
+                <option value="48.51">  Sedex                             - Entrega em até 16 dias úteis - R$ 48,51</option>
+                <option value="92.81">  Transportadora MMA Cargas         - Entrega em até 7 dias úteis - R$ 92,81</option>
+            </select>
+        </div>
+        <div class="subtotal">
+            <h3>Subtotal: R$ 0.00</h3>
+        </div>
+    
+        <div class="frete">
+            <h3>Frete: R$ 0.00</h3>
+        </div>
+    
+        <div class="total">
+            <h2>TOTAL</h2>
+            <h1>R$ 0.00</h1>
+        </div>
+    
+        <div class="installments">
+            <span>12x de R$ 138,60</span><br>
+            <span>s/ juros</span>
+        </div>
+    
+        <div class="discount">
+            <p>R$ 1.416,27</p>
+            <p>com desconto à vista no boleto ou pix</p>
+        </div>
+
+    <a href="#" class="checkout-btn" id="checkout">Finalizar Compra</a>
+
+    <script>
+        // Exemplo de dados do carrinho (pode ser substituído por dados reais do seu e-commerce)
+        const cartItems = [
+            { id: 1, imagem: 'img/produtos/Gabinete NZXT/1.jpg', produto: 'Produto 1', tipo: 'Tipo do Produto 1', quantidade: 2, preco: 590.00 },
+            { id: 2, imagem: 'caminho/para/imagem2.jpg', produto: 'Produto 2', tipo: 'Tipo do Produto 2', quantidade: 1, preco: 30.00 },
+            // Adicionar mais itens se necessário
+        ];
+
+        // Função para exibir os itens do carrinho
+        function displayCartItems() {
+            const cartContainer = document.getElementById('cart-items');
+            let subtotal = 0;
+
+            cartItems.forEach(item => {
+                const { imagem, produto, tipo, quantidade, preco } = item;
+                const totalItem = preco * quantidade;
+                subtotal += totalItem;
+
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('produto');
+                productDiv.innerHTML = `
+                    <img src="${imagem}" alt="${produto}">
+                    <div class="detalhes">
+                        <h3>${produto}</h3>
+                        <p>Tipo: ${tipo}</p>
+                        <p>Quantidade: ${quantidade}</p>
+                        </select>
+                        <p>Total: R$ ${totalItem.toFixed(2)}</p>
+                    </div>
+                `;
+                cartContainer.appendChild(productDiv);
+            });
+
+            const subtotalElement = document.getElementById('subtotal');
+            subtotalElement.textContent = `R$ ${subtotal.toFixed(2)}`;
+
+            const opcoesEntrega = document.querySelectorAll('.opcoes-entrega');
+            opcoesEntrega.forEach(select => select.addEventListener('change', updateTotal));
+
+            updateTotal();
+        }
+
+        // Função para atualizar o total com base no subtotal e nas opções de entrega selecionadas
+        function updateTotal() {
+            const subtotal = parseFloat(document.getElementById('subtotal').textContent.replace('R$ ', ''));
+            let total = subtotal;
+
+            const opcoesEntrega = document.querySelectorAll('.opcoes-entrega');
+            opcoesEntrega.forEach(select => {
+                total += parseFloat(select.value);
+            });
+
+            document.getElementById('total').textContent = `R$ ${total.toFixed(2)}`;
+        }
+
+        // Event listener para o botão de finalizar compra
+        document.getElementById('checkout').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita que o link redirecione para outra página (usando "#" por enquanto)
+
+            // Aqui você pode adicionar a lógica para finalizar a compra, redirecionar para o checkout, etc.
+            console.log('Implemente a lógica de finalizar compra aqui.');
+        });
+
+        // Exibir os itens do carrinho ao carregar a página
+        displayCartItems();
+    </script>
+</body>
+</html>

@@ -1,2 +1,0 @@
-TECNOLOGIA INTEL® TURBO BOOST MAX 3.0
-A tecnologia Intel® Turbo Boost Max 3.0 identifica o (s) núcleo (s) com melhor desempenho em um processador e fornece maior desempenho nesses núcleos através do aumento da frequência conforme necessário, aproveitando a potência e a capacidade térmica.

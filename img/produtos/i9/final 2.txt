@@ -1,2 +1,0 @@
-TECNOLOGIA DE VIRTUALIZAÇÃO INTEL® (VT-X)
-A Tecnologia de virtualização Intel® (VT-x) permite que uma plataforma de hardware funcione como várias plataformas "virtuais". Ela oferece mais capacidade de gerenciamento ao limitar o tempo de paralisação e manter a produtividade dos funcionários, ao isolar as atividades de computação em partições separadas.

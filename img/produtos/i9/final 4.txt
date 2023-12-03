@@ -1,3 +1,0 @@
-TECNOLOGIA DE MONITORAMENTO TÉRMICO
-Tecnologias de monitoramento térmico protegem o pacote do processador e o sistema contra falhas térmicas por meio de diversos recursos de gerenciamento térmicos. Um Sensor térmico digital on-die (DTS) detecta a temperatura do núcleo, e os recursos de gerenciamento térmico reduzem o consumo de energia do pacote, e com isso, da temperatura. quando necessário para permanecer dentro dos limites operacionais normais.
-

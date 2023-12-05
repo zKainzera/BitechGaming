@@ -39,7 +39,7 @@
           <a href="produtos.html"> PRODUTOS  | </a>
           <a href="promocoes.html"> PROMOÇÕES |</a> 
           <a href="cadastro.html"> PERFIL </a>
-        </div>
+        </div></div></div>
         <p></p><p></p><p></p>
 
 
@@ -76,7 +76,7 @@
         <div class="sc-10">
             <div class="sc-stylebutton-0">
                 <button class="sc-button-0 buttonBack">CONTINUAR COMPRANDO</button>
-                <button class="sc-button-0 buttonGoToCart">FINALIZAR A COMPRA</button>
+                <button class="sc-button-0 buttonGoToCart" onclick="window.location.href='agradecimentocompra.html'">FINALIZAR A COMPRA</button>
             </div>
         </div>
     </div>
@@ -85,22 +85,22 @@
    <!-- Produtos -->
    <section class="produto">
     <div class="imagem">
-      <img src="img/produtos/Gabinete NZXT/1.jpg" alt="Imagem do produto">
+      <img src="img/produtos/NOTEBOOK GAMER ALIENWARE M16/notebook (5).png" alt="Imagem do produto">
     </div>
   
     <div class="detalhes">
-      <h2>Notebook Gamer Acer Nitro 5</h2>
-      <p>Intel Core i7-11800H, 16GB RAM, NVIDIA RTX3050, SSD 512GB, 15.6" LED FHD IPS, Linux, Preto AN515-57-795J</p>
+      <h2>Notebook Dell Alienware m16</h2>
+      <p>AW16-i1300-M20P 16" QHD 13ª Geração Intel Core i9 32GB 1TB SSD RTX 4070 Windows 11</p>
   
       <div class="precos">
         <p>
           <br>
-          <small>R$ 4.499,99</small>
+          <small>R$ 12.974,30</small>
       </div>
     </div>
   </section>
 
-  <br><br><br><br><br>
+  <br><br><br>
         <!-- Seção da Garantia Estendida -->
         <div class="carrinho">
             <section class="garantia-estendida">
@@ -109,25 +109,25 @@
 
                 <div class="planos">
                     <div class="plano">
+                        <h3>Sem Garantia</h3>
+                        <p>A partir de R$ 00,00</p>
+                        <p>0 meses de garantia estendida</p>
+                        <input type="radio" name="plano" id="plano3">
+                        <label for="plano3">Selecionar</label>
+                    </div>
+                    <div class="plano">
                         <h3>Recomendado</h3>
-                        <p>12 meses de garantia estendida</p>
-                        <p>A partir de R$ 24,50</p>
+                        <p>A partir de R$ 560,00</p>
+                        <p>+12 meses de garantia estendida</p>
                         <input type="radio" name="plano" id="plano1">
                         <label for="plano1">Selecionar</label>
                     </div>
                     <div class="plano">
                         <h3>Premium</h3>
-                        <p>24 meses de garantia estendida</p>
-                        <p>A partir de R$ 79,70</p>
+                        <p>A partir de R$ 1260,00</p>
+                        <p>+24 meses de garantia estendida</p>
                         <input type="radio" name="plano" id="plano2">
                         <label for="plano2">Selecionar</label>
-                    </div>
-                    <div class="plano">
-                        <h3>Excelsior</h3>
-                        <p>36 meses de garantia estendida</p>
-                        <p>A partir de R$ 278,98</p>
-                        <input type="radio" name="plano" id="plano3">
-                        <label for="plano3">Selecionar</label>
                     </div>
                 </div>
                 <br><br><br><br>
@@ -143,7 +143,7 @@
     </div>
 
 </div>
-    <br><br><br><br>
+    <br><br><br>
 
 
     <script src="JavaScript/carrinho.js"></script>
@@ -167,7 +167,48 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var radioButtons = document.querySelectorAll('.garantia-estendida .plano input[type="radio"]');
+            var precoProduto = 12974.30; // Substitua pelo preço real do produto
 
+            radioButtons.forEach(function (radio) {
+                radio.addEventListener('change', function () {
+                    // Obter o valor do plano selecionado
+                    var valorPlano = parseFloat(this.parentElement.querySelector('p').textContent.match(/[\d.,]+/g)[0].replace(',', '.'));
+
+                    // Calcular o novo preço total
+                    var novoPrecoTotal = precoProduto + valorPlano;
+
+                    // Atualizar o elemento HTML que exibe o novo preço total
+                    document.querySelector('.sc-8').textContent = 'R$ ' + novoPrecoTotal.toFixed(2);
+                });
+            });
+        });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var radioButtons = document.querySelectorAll('.garantia-estendida .plano input[type="radio"]');
+        var precoProduto = 12974.30; // Substitua pelo preço real do produto
+
+        radioButtons.forEach(function (radio) {
+            radio.addEventListener('change', function () {
+                // Obter o valor do plano selecionado
+                var valorPlano = parseFloat(this.parentElement.querySelector('p').textContent.match(/[\d.,]+/g)[0].replace(',', '.'));
+
+                // Calcular o novo preço total
+                var novoPrecoTotal = precoProduto + valorPlano;
+
+                // Atualizar o elemento HTML que exibe o novo preço total
+                document.querySelector('.sc-8').textContent = 'R$ ' + novoPrecoTotal.toFixed(2);
+
+                // Atualizar o elemento HTML que exibe o valor da garantia estendida
+                document.querySelector('.sc-5').textContent = 'R$ ' + valorPlano.toFixed(2);
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

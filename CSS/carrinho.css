@@ -17,7 +17,7 @@
 body {
     font-family: Kodchasan, sans-serif;
     background-color: #e4e4e4;
-    margin: 20px;
+    margin: 10px;
 }
 
 h1 {
@@ -195,7 +195,7 @@ margin-top: -280px
 
 
 .produto {
-    width: 50%;
+    width: 40%;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;

@@ -753,10 +753,10 @@
         </div>
         <P></P><P></P>
         <div class="tachado">
-          R$ 4.513,00
+          R$ 6.097,99
         </div>
         <div class="preco">
-          R$ 3.836,05
+          R$ 5.857,99
         </div>
         <div class="pix">
           À vista no pix
@@ -839,10 +839,10 @@
 
 
 </body>
-<script src="JavaScript/script.js"> </script>
-<script src="JavaScript/carrosseljava.js"></script>
-<script type="text/javascript">
-  var slideIndex = 1;
+  <script src="JavaScript/script.js"> </script>
+  <script src="JavaScript/carrosseljava.js"></script>
+  <script type="text/javascript">
+      var slideIndex = 1;
   showSlides(slideIndex);
   var autoSlideInterval; // Variável para armazenar o intervalo automático
 
@@ -868,25 +868,38 @@
     autoSlideInterval = setInterval(autoSlide, 6750); // Iniciar um novo intervalo automático
   }
 
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+// Definição da função showSlides, que recebe um parâmetro 'n'
+function showSlides(n) {
+  var i; // Declaração da variável de controle 'i'
+  var slides = document.getElementsByClassName("mySlides"); // Seleciona todos os elementos HTML com a classe "mySlides" e armazena em uma variável 'slides'
+  var dots = document.getElementsByClassName("dot"); // Seleciona todos os elementos HTML com a classe "dot" e armazena em uma variável 'dots'
+  
+  // Verifica se 'n' (índice do slide) é maior que o número total de slides
+  if (n > slides.length) {
+    slideIndex = 1; // Se for, define o índice do slide como 1 (volta para o primeiro slide)
   }
+  
+  // Verifica se 'n' é menor que 1 (primeiro slide)
+  if (n < 1) {
+    slideIndex = slides.length; // Se for, define o índice do slide como o último slide
+  }
+  
+  // Oculta todos os slides definindo o estilo de exibição como 'none'
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  // Remove a classe "active" de todos os elementos com a classe "dot"
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  
+  // Exibe o slide atual definindo o estilo de exibição como 'block'
+  slides[slideIndex - 1].style.display = "block";
+  
+  // Adiciona a classe "active" ao ponto (dot) correspondente ao slide atual
+  dots[slideIndex - 1].className += " active";
+}
 </script>
 
 </html>

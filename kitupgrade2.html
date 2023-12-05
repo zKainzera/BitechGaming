@@ -247,15 +247,20 @@
 
     <script src="JavaScript/produto.js"></script>
     <script>
-      function toggleEspecificacoes() {
-          var secaoEspecificacoes = document.getElementById('secaoInformacoesTecnicas');
-          
-          if (secaoEspecificacoes.style.display === 'none') {
-              secaoEspecificacoes.style.display = 'block';
-          } else {
-              secaoEspecificacoes.style.display = 'none';
-          }
-      }
+// Definição da função toggleEspecificacoes
+function toggleEspecificacoes() {
+    // Obtém a referência do elemento HTML com o ID 'secaoInformacoesTecnicas' e armazena na variável secaoEspecificacoes
+    var secaoEspecificacoes = document.getElementById('secaoInformacoesTecnicas');
+    
+    // Verifica se o estilo de exibição (display) do elemento é 'none' (oculto)
+    if (secaoEspecificacoes.style.display === 'none') {
+        // Se estiver oculto, altera o estilo de exibição para 'block' (visível)
+        secaoEspecificacoes.style.display = 'block';
+    } else {
+        // Se não estiver oculto, altera o estilo de exibição para 'none' (oculto)
+        secaoEspecificacoes.style.display = 'none';
+    }
+}
   </script>
 </body>
 </html>

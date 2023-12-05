@@ -1,183 +1,263 @@
-/* Estilos básicos */
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Adicione este estilo se necessário para ajustar o conteúdo da body */
+@media screen and (max-width: 767px) {
+    .body-content {
+        margin-right: 0;
+    }
+}
+
+* {
     margin: 0;
-    padding: 20px;
-    background-color: #f5f5f5;
-    color: #333;
-    display: flex;
-    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Kodchasan, sans-serif;
+    background-color: #e4e4e4;
+    margin: 20px;
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     color: #9545a0;
+    margin-top: 10px;
 }
 
-.container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-width: 800px;
-    margin-top: 20px;
-}
 
-.content {
-    flex-grow: 1;
-}
-
-.right-content {
-    width: 300px;
-    margin-left: 20px;
-}
-
-/* Estilos para a seção de subtotal */
-.subtotal {
-    padding: 10px;
-    font-size: 18px;
-    background-color: #fff;
+.sc-0 {
+    width: 40vh; /* Ajuste conforme necessário */
+    margin-left: auto;
+    padding: 20px;
+    background-color: #f8f8f8;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* Adiciona uma coluna para alinhar tudo verticalmente */
+    }
 
-/* Estilos para a seção de frete */
-.frete {
-    padding: 10px;
-    font-size: 18px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.frete h3 {
-    margin: 0;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para a seção de total */
-.total h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-.total h1 {
-    text-align: center;
-    font-size: 36px;
-    color: #9545a0;
-    margin: 0;
-}
-
-/* Estilos para a seção de pagamento */
-.installments,
-.discount {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.installments span {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.discount {
-    font-size: 18px;
-    text-align: center;
-    color: #9545a0;
+/* Estilo para o título */
+.sc-1 {
+    color: #333;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
-/* Estilos para botão continuar */
-.btn-continue {
-    display: block;
-    width: 200px;
+.sc-8 {
+    font-size:  30px;
     margin: 20px auto;
-    padding: 10px;
-    text-align: center;
-    background-color: #9545a0;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.btn-continue:hover {
-    background-color: #7d3687;
-}
-
-/* Estilos para a seção de produtos no carrinho */
-.produto {
+/* Estilo para os itens de serviço */
+.sc-3 {
     display: flex;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-    margin-bottom: 20px;
-}
-
-.produto img {
-    margin-right: 20px;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-.detalhes {
-    flex-grow: 1;
-}
-
-/* Estilos para o botão finalizar compra */
-.checkout-btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background-color: #9545a0;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.checkout-btn:hover {
-    background-color: #7d3687;
-}
-
-/* Estilos para os radio buttons */
-.tiposdefrete {
-    padding: 10px;
-    font-size: 18px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.tiposdefrete h3 {
-    margin: 0;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.tiposdefrete label {
-    display: block;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
-/* Estilos para o radio button focado */
-.frete select,
-.frete select:focus {
-    border-color: #9545a0;
+/* Estilo para os botões */
+.sc-stylebutton-0 {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.frete option {
-    font-size: 1px;
+/* Estilo para os botões específicos */
+.sc-button-0 {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buttonBack {
+    background-color: #ccc;
+    color: #333;
+}
+
+.buttonGoToCart {
+    background-color: #c800ff;
+    color: #fff;
+}
+
+#centralizar {
+    top: 100%;
+    left: 100%;
+
+}
+
+.garantia-estendida {
+    margin-top: -25%; /* Ajuste conforme necessário */
+    }
+
+    .garantia-estendida {
+        padding-top: 75px; /* Ajuste conforme necessário */
+}
+
+
+.produto {
+margin-top: -280px
+    }
+
+
+.preco {
+    color: #9545a0;
+}
+
+.card {
+    width: calc(65% - 20px);
+}
+
+.carrinho-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.descricao-produto {
+    flex: 1;
+}
+
+.imagem-produto img {
+    height: auto;
+    max-width: 100%;
+    flex: 0 0 30%;
+    margin-right: 15px;
+}
+
+.garantia-estendida {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.garantia-estendida h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.garantia-servicos {
+    width: 30%;
+}
+
+.garantia-estendida p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.garantia-estendida .planos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.garantia-estendida .plano {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.garantia-estendida .plano label {
+    display: block;
+    max-width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.garantia-estendida .plano input[type="radio"] {
+    display: none;
+}
+
+.garantia-estendida .plano input[type="radio"]:checked + label {
+    background-color: #c800ff;
+    color: #ffffff;
+}
+
+
+.produto {
+    width: 50%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Adicionei margem inferior para separar os produtos */
+}
+
+.produto .imagem {
+    width: 30%; /* Reduzi a largura para 30% */
+    height: 150px; /* Ajustei a altura da imagem para um valor específico */
+    overflow: hidden; /* Adicionei overflow para garantir que a altura seja respeitada */
+    margin-bottom: 10px; /* Adicionei margem inferior para separar a imagem dos detalhes */
+    float: left; /* Adicionei float para posicionar a imagem à esquerda */
+}
+
+.produto .imagem img {
+    width: 100%; /* Ajustei a largura da imagem para 100% para ocupar o contêiner pai */
+    height: 100%; /* Ajustei a altura para 100% para garantir que a imagem não seja cortada ao meio */
+    object-fit: cover; /* Adicionei object-fit para garantir que a imagem cubra todo o espaço */
+}
+
+.produto .detalhes {
+    padding: 20px;
+    margin-left: 20%; /* Ajustei a margem esquerda para 40% para alinhar com a imagem */
+}
+
+.produto .detalhes h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.produto .detalhes p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.produto .detalhes .precos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto .detalhes .precos p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.produto .detalhes .precos .prazo {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.produto .detalhes a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #000000; /* Adicionei uma cor de fundo para destacar o link */
 }

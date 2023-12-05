@@ -1,77 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/carrinho.css">
     <title>Carrinho Bitech Gaming | Melhor Loja de Hardwares</title>
+    <link rel="icon" href="img/Logo Base.png" type="image/x-icon">
 </head>
-
 
 <body>
 
-        <h1>Seu Carrinho</h1>
-      
-        <div id="cart-items">
-          <!-- Aqui serão inseridos os itens do carrinho dinamicamente -->
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+          <img src="img/logo.png" alt="Logo">
+        </a>
         </div>
-        <div class="container">
-            <div class="content">
-                <div class="right-content">
-        <div class="tiposdefrete">
-            <h3>Opções de Entrega:</h3>
-            <br>
-            <label>
-                <input type="radio" name="opcoes-entrega" value="0.00">
-                Retire na Loja Mais Próxima - Entrega em até 7 Dias úteis
-            </label><br>
-            <label>
-                <input type="radio" name="opcoes-entrega" value="17.27">
-                Transportadora Saturno - Entrega em até 10 dias úteis
-            </label><br>
-            <label>
-                <input type="radio" name="opcoes-entrega" value="14.99">
-                Expresso - Entrega em até 6 dias úteis
-            </label><br>
-            <label>
-                <input type="radio" name="opcoes-entrega" value="9.99">
-                Econômico - Entrega em até 8 dias úteis
-            </label><br>
-            <label>
-                <input type="radio" name="opcoes-entrega" value="32.06">
-                Transportadora Total Express - Entrega em até 15 dias úteis
-            </label><br>
-            <label>
-                <input type="radio" name="opcoes-entrega" value="36.84">
-                PAC - Entrega em até 18 dias úteis
-            </label><br>
-            <label>
-                <input type="radio" name="opcoes-entrega" value="48.51">
-                Sedex - Entrega em até 16 dias úteis
-            </label><br>
-            <label>
-                <input type="radio" name="opcoes-entrega" value="92.81">
-                Transportadora MMA Cargas - Entrega em até 7 dias úteis
-            </label><br>
+          <div class="icons-navbar">
+            <a href="pesquisa.html">
+                <img class="icon" src="img/icone1.png" alt="Pesquisa">
+            </a>
+            <a href="carrinho.html">
+                <img class="icon" src="img/icone2.png" alt="Carrinho">
+            </a>
+            <a href="favoritos.html">
+                <img class="icon" src="img/icone3.png" alt="Favoritos">
+            </a>
+            <a href="cadastro.html">
+                <img class="icon" src="img/icone4.png" alt="Perfil" />
+            </a>
+        </div>
+            </nav>
+          </nav>
+        <div class="barra-navbar">
+          <a href="index.html"> HOME  |</a>
+          <a href="produtos.html"> PRODUTOS  | </a>
+          <a href="promocoes.html"> PROMOÇÕES |</a> 
+          <a href="cadastro.html"> PERFIL </a>
+        </div>
+        <p></p><p></p><p></p>
+
+
+
+
+<div id="centralizar">
+    <div class="sc-0">
+        <h3 class="sc-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg" class="IconServices">
+                <g>
+                    <path d="M23.9243 10.6678C23.8864 10.3304 23.4929 10.0767 23.1527 10.0767C22.0531 10.0767 21.0773 9.4313 20.668 8.43241C20.2503 7.40955 20.5198 6.21688 21.339 5.46533C21.5971 5.22941 21.6285 4.83438 21.4122 4.56016C20.8492 3.84545 20.2097 3.19977 19.5112 2.64023C19.2379 2.42102 18.8363 2.45153 18.5992 2.71402C17.8839 3.50616 16.5991 3.80051 15.6062 3.38628C14.5734 2.95171 13.9215 1.90476 13.9855 0.781012C14.0066 0.42781 13.7484 0.120899 13.3964 0.0799012C12.5 -0.0238902 11.5956 -0.0269002 10.6966 0.0728434C10.3491 0.111246 10.0911 0.410892 10.1026 0.759631C10.1415 1.87238 9.48222 2.90085 8.45936 3.31985C7.47842 3.72059 6.20251 3.42842 5.48874 2.64324C5.25282 2.38459 4.85831 2.35283 4.58316 2.56737C3.86409 3.13168 3.2101 3.77778 2.64195 4.48668C2.42056 4.76224 2.45326 5.16163 2.71346 5.39838C3.54888 6.15492 3.81822 7.35786 3.38447 8.39266C2.97035 9.3792 1.94603 10.0147 0.773497 10.0147C0.392998 10.0025 0.122206 10.2581 0.0801705 10.6041C-0.0252816 11.5054 -0.0264233 12.4241 0.0750847 13.3327C0.112969 13.6715 0.518066 13.9231 0.862031 13.9231C1.90721 13.8965 2.91004 14.5431 3.33133 15.5672C3.75055 16.5901 3.48069 17.7823 2.66011 18.5348C2.40344 18.7708 2.37064 19.1649 2.58736 19.4388C3.14461 20.149 3.7848 20.7951 4.48539 21.3594C4.76044 21.5809 5.16045 21.5499 5.39886 21.2871C6.11689 20.4931 7.40151 20.1992 8.39033 20.6143C9.42617 21.0477 10.0778 22.0946 10.0142 23.2186C9.99329 23.5718 10.2521 23.8797 10.6029 23.9198C11.0616 23.9734 11.5228 24 11.9854 24C12.4244 24 12.8635 23.976 13.3027 23.9271C13.6506 23.8887 13.9082 23.5888 13.8965 23.2399C13.8563 22.1277 14.517 21.0991 15.5387 20.6809C16.5261 20.2776 17.7963 20.5728 18.5105 21.3568C18.7477 21.615 19.1398 21.6463 19.4161 21.4326C20.1339 20.8697 20.7867 20.2239 21.3573 19.5132C21.5789 19.2381 21.5475 18.8382 21.2858 18.6011C20.4506 17.845 20.1798 16.6416 20.6135 15.6078C21.0212 14.6346 22.0075 13.9811 23.0682 13.9811L23.2166 13.985C23.561 14.013 23.8775 13.7478 23.9191 13.3964C24.0251 12.4944 24.0262 11.5767 23.9243 10.6678ZM11.9998 18.9181C8.17891 18.9181 5.08167 15.8209 5.08167 12.0001C5.08167 8.17937 8.17901 5.08213 11.9998 5.08213C15.8206 5.08213 18.9179 8.17937 18.9179 12.0001C18.9179 13.297 18.5603 14.51 17.9394 15.5473L14.9101 12.518C15.1294 12.0009 15.2452 11.4403 15.2451 10.8618C15.2451 9.72887 14.8039 8.66387 14.0028 7.86291C13.2018 7.06195 12.1368 6.62084 11.0041 6.62084C10.6261 6.62084 10.2499 6.67107 9.88586 6.77019C9.72644 6.81368 9.59608 6.94508 9.55363 7.10482C9.51024 7.26818 9.55913 7.4356 9.68679 7.56337C9.68679 7.56337 11.1823 9.07042 11.6827 9.57069C11.7351 9.62311 11.735 9.74817 11.7276 9.79322L11.723 9.82612C11.6725 10.3762 11.5753 11.0365 11.495 11.2903C11.4843 11.301 11.4741 11.31 11.4631 11.321C11.4516 11.3326 11.441 11.3437 11.4299 11.3551C11.1728 11.4376 10.5023 11.536 9.94347 11.586L9.94357 11.583L9.91846 11.5893C9.91399 11.5898 9.90569 11.5905 9.89469 11.5905C9.83428 11.5905 9.74543 11.5736 9.66468 11.4929C9.14386 10.9721 7.70697 9.54547 7.70697 9.54547C7.57806 9.41698 7.44583 9.38999 7.35771 9.38999C7.15231 9.38999 6.96839 9.53841 6.91048 9.75129C6.51493 11.2151 6.93424 12.7896 8.00506 13.8605C8.80623 14.6616 9.87133 15.1027 11.0042 15.1027C11.5828 15.1027 12.1433 14.9869 12.6603 14.7676L15.7225 17.8298C14.6474 18.5177 13.3708 18.9181 11.9998 18.9181Z" fill="#c800ff"></path>
+                </g>
+                <defs>
+                    <clipPath>
+                        <rect width="24" height="24" fill="white"></rect>
+                    </clipPath>
+                </defs>
+            </svg> SERVIÇOS
+        </h3>
+    
+        <div class="sc-2">
+            <div class="sc-3">
+                <h4 class="sc-4">Garantia Estendida: </h4>
+                <h4 class="sc-5">R$&nbsp;0,00</h4>
             </div>
-    <br>
-            <div class="subtotal">
-            <h3>Subtotal: R$ 0.00</h3>
-        </div>
-        
-        <div class="frete">
-            <h3>Frete: R$ 0.00</h3>
         </div>
     
-        <div class="total">
-            <h2>TOTAL</h2>
-            <h1>R$ 0.00</h1>
+        <div class="sc-6">
+            <p class="sc-7">Valor total dos serviços: </p>
+            <h5 class="sc-8">R$&nbsp;0,00</h5>
+            <p class="sc-9">(Em até <strong>10x sem juros</strong>)</p>
         </div>
     
-    </br></br></br></br></br>
-    <a href="#" class="checkout-btn" id="checkout">Finalizar Compra</a>
+        <div class="sc-10">
+            <div class="sc-stylebutton-0">
+                <button class="sc-button-0 buttonBack">CONTINUAR COMPRANDO</button>
+                <button class="sc-button-0 buttonGoToCart">FINALIZAR A COMPRA</button>
+            </div>
+        </div>
+    </div>
+
+    
+   <!-- Produtos -->
+   <section class="produto">
+    <div class="imagem">
+      <img src="img/produtos/Gabinete NZXT/1.jpg" alt="Imagem do produto">
+    </div>
+  
+    <div class="detalhes">
+      <h2>Notebook Gamer Acer Nitro 5</h2>
+      <p>Intel Core i7-11800H, 16GB RAM, NVIDIA RTX3050, SSD 512GB, 15.6" LED FHD IPS, Linux, Preto AN515-57-795J</p>
+  
+      <div class="precos">
+        <p>
+          <br>
+          <small>R$ 4.499,99</small>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br><br><br>
+        <!-- Seção da Garantia Estendida -->
+        <div class="carrinho">
+            <section class="garantia-estendida">
+                <h2>Garantia Estendida</h2>
+                <p>Mantenha o seu produto protegido por mais tempo</p>
+
+                <div class="planos">
+                    <div class="plano">
+                        <h3>Recomendado</h3>
+                        <p>12 meses de garantia estendida</p>
+                        <p>A partir de R$ 24,50</p>
+                        <input type="radio" name="plano" id="plano1">
+                        <label for="plano1">Selecionar</label>
+                    </div>
+                    <div class="plano">
+                        <h3>Premium</h3>
+                        <p>24 meses de garantia estendida</p>
+                        <p>A partir de R$ 79,70</p>
+                        <input type="radio" name="plano" id="plano2">
+                        <label for="plano2">Selecionar</label>
+                    </div>
+                    <div class="plano">
+                        <h3>Excelsior</h3>
+                        <p>36 meses de garantia estendida</p>
+                        <p>A partir de R$ 278,98</p>
+                        <input type="radio" name="plano" id="plano3">
+                        <label for="plano3">Selecionar</label>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <p>Está incluso em nossos serviços:</p>
+                <ul>
+                    <li>Reparo utilizando peças originais</li>
+                    <li>Cobertura de defeitos funcionais</li>
+                    <li>Assistência técnica disponível em todo o Brasil</li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
+
+</div>
+    <br><br><br><br>
+
 
     <script src="JavaScript/carrinho.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var radioButtons = document.querySelectorAll('.garantia-estendida .plano input[type="radio"]');
+
+            radioButtons.forEach(function (radio) {
+                radio.addEventListener('change', function () {
+                    var labels = document.querySelectorAll('.garantia-estendida .plano label');
+
+                    labels.forEach(function (label) {
+                        label.textContent = 'Selecionar';
+                    });
+
+                    var selectedLabel = this.nextElementSibling;
+                    if (this.checked) {
+                        selectedLabel.textContent = 'Selecionado';
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
+
 </html>
